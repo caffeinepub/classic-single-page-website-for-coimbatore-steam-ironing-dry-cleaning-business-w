@@ -1,5 +1,6 @@
 import { SiX, SiFacebook, SiInstagram } from 'react-icons/si';
 import { Heart } from 'lucide-react';
+import { BrandMark } from './BrandMark';
 
 export function SiteFooter() {
   const currentYear = new Date().getFullYear();
@@ -18,7 +19,7 @@ export function SiteFooter() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-serif font-bold mb-3">Premium Laundry Care</h3>
+            <BrandMark className="mb-3" />
             <p className="text-sm text-muted-foreground">
               Professional steam ironing, dry cleaning, and garment care services in Coimbatore, Tamil Nadu.
             </p>

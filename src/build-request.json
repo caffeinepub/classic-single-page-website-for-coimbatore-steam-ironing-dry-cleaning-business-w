@@ -1,234 +1,128 @@
 {
   "kind": "build_request",
-  "title": "Classic single-page website for Coimbatore steam ironing & dry cleaning business (with free stock imagery)",
+  "title": "Apply light-blue theme, fix phone number, add washing machine images, and add block-style 3D ALL CAPS branding",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-1",
-      "text": "Create a responsive single-page marketing website homepage for a Coimbatore (Tamil Nadu, India) steam ironing, laundry, and dry cleaning business, using a classic, professional layout aligned with common competitor sites.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-1",
-          "msg-5",
-          "msg-10"
-        ],
-        "quotes": [
-          "I am an independent female who is currently doing steam ironing, laundry and dry cleaning business in Coimbatore, Tamil Nadu, India.",
-          "I need to create a website based on the competitors in this industry with free images depicting the nature of my business and also to be classic in outcome.",
-          "Please start with the design with the above specifications mentioned"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Homepage renders without errors and is usable on mobile, tablet, and desktop breakpoints.",
-        "Page is structured into clear sections: Hero, Services, Why Choose Us, How It Works, Testimonials, Gallery, Contact.",
-        "All copy is in English and refers to Coimbatore, Tamil Nadu, India.",
-        "Navigation (header links) smoothly scrolls to each section."
-      ]
-    },
-    {
-      "id": "REQ-2",
-      "text": "Implement a coherent classic visual theme (colors, typography, spacing, component styling) and apply it consistently across the site. Do not use a blue/purple primary palette.",
+      "id": "REQ-14",
+      "text": "Apply a clean light-blue visual theme (light-blue backgrounds with dark/near-black text) consistently across the entire site by updating the global theme tokens in `frontend/src/index.css` (e.g., `--background`, `--muted`, `--card`, `--primary`, `--accent`, `--border`, and related foreground tokens), ensuring all sections and components (including header/footer, cards, and muted section backgrounds like Gallery) reflect the light-blue styling.",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-1"
         ],
         "quotes": [
-          "also to be classic in outcome"
+          "apply the light blue now"
         ]
       },
       "acceptanceCriteria": [
-        "Typography uses a classic, readable pairing (e.g., serif headings + sans body, or an equivalent classic pairing).",
-        "Color palette feels classic/professional (e.g., warm neutrals, charcoal, off-white, subtle gold/emerald accents) and avoids blue/purple as the primary theme.",
-        "Buttons, cards, section headers, and spacing are consistent across sections."
+        "The site background reads as light-blue (not warm/cream) across all sections.",
+        "Body text uses a dark/near-black color with sufficient contrast on the new light-blue backgrounds.",
+        "Cards, borders, and muted surfaces use cohesive light-blue-tinted neutrals (no remaining warm/cream surfaces).",
+        "Accent/primary colors remain readable and consistent with the light-blue theme across buttons, icons, and links."
       ]
     },
     {
-      "id": "REQ-3",
-      "text": "Add a Hero section with a strong headline, short supporting text, and clear calls-to-action for contacting the business (Call and WhatsApp).",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-6"
-        ],
-        "quotes": [
-          "Hero Section... Clear tagline like: “Premium Steam Ironing & Dry Cleaning in Coimbatore”.",
-          "Contact & Location\n  Simple section with call and WhatsApp buttons."
-        ]
-      },
-      "acceptanceCriteria": [
-        "Hero includes a headline comparable to “Premium Steam Ironing & Dry Cleaning in Coimbatore” (or an equivalent).",
-        "Hero includes two prominent CTA buttons: “Call” (tel: link) and “WhatsApp” (wa.me link).",
-        "CTA buttons are accessible (keyboard focus styles, discernible text)."
-      ]
-    },
-    {
-      "id": "REQ-4",
-      "text": "Create a Services section with cards for these services: Steam Ironing, Dry Cleaning, Stain Removal, Darning, Saree Pleating & Ironing. Each card must include a short description.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-1",
-          "msg-6"
-        ],
-        "quotes": [
-          "We do steam ironing for all types of clothing material and we also do dry cleaning for all types of clothing, stain removing, darning, as well as saree pleating and ironing.",
-          "Services Overview\n  Simple cards for: Steam Ironing, Dry Cleaning, Stain Removal, Darning, Saree Pleating & Ironing."
-        ]
-      },
-      "acceptanceCriteria": [
-        "Exactly the 5 specified services are displayed.",
-        "Each service appears as a visually consistent card with title + 1–2 sentence description.",
-        "Cards are responsive (grid adapts across breakpoints)."
-      ]
-    },
-    {
-      "id": "REQ-5",
-      "text": "Add a 'Why Choose Us' section with 4–6 classic, trust-building highlights relevant to local customers (e.g., fabric-safe process, on-time delivery, affordable pricing, experienced handling of sarees).",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-6"
-        ],
-        "quotes": [
-          "Why Choose Us\n  Points like Fast Delivery, Fabric-Safe Process, Affordable Rates, Trusted by Local Families."
-        ]
-      },
-      "acceptanceCriteria": [
-        "Section shows 4–6 bullet points or mini-cards.",
-        "Copy is specific to garment care and local trust (not generic tech/product phrasing)."
-      ]
-    },
-    {
-      "id": "REQ-6",
-      "text": "Add a 'How It Works' section describing the process in 3–4 steps (e.g., Drop-off/Call, Cleaning & Care, Steam Pressing/Finishing, Pickup/Delivery). Keep wording non-committal about pickup/delivery (do not promise unless explicitly configured).",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-6"
-        ],
-        "quotes": [
-          "How It Works\n  Pickup → Cleaning → Pressing → Delivery (even if you currently don’t offer pickup, we can adjust accordingly)."
-        ]
-      },
-      "acceptanceCriteria": [
-        "Section displays 3–4 steps in order.",
-        "Language does not guarantee pickup/delivery; it is phrased as options (e.g., “Drop-off or contact us” / “Pickup/Delivery (if available)”)."
-      ]
-    },
-    {
-      "id": "REQ-7",
-      "text": "Add a Testimonials section with 3 placeholder customer reviews (text-only), written in a realistic, professional tone. Do not attribute to real people unless the user provides names.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-6"
-        ],
-        "quotes": [
-          "Customer Testimonials\n  Clean text-based reviews for trust."
-        ]
-      },
-      "acceptanceCriteria": [
-        "Three testimonials render consistently and look credible.",
-        "No real-person names or unverifiable claims are included."
-      ]
-    },
-    {
-      "id": "REQ-8",
-      "text": "Add a Gallery section that displays a grid of free stock images depicting steam ironing, laundry care, dry cleaning, and neatly pressed sarees/fabrics.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-1",
-          "msg-6"
-        ],
-        "quotes": [
-          "with free images depicting the nature of my business",
-          "Gallery\n  Free photos showing ironing, dry cleaning, sarees, fabrics."
-        ]
-      },
-      "acceptanceCriteria": [
-        "Gallery displays at least 6 images in a responsive grid.",
-        "Images are optimized for the web (reasonable file sizes, correct dimensions, object-fit handling).",
-        "Each image includes meaningful alt text in English."
-      ]
-    },
-    {
-      "id": "REQ-9",
-      "text": "Add a Contact section with business details and simple contact actions (Call, WhatsApp). Include fields/placeholders for Address in Coimbatore, Business Hours, and a short note about services. Do not embed interactive maps.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-6"
-        ],
-        "quotes": [
-          "Contact & Location\n  Simple section with call and WhatsApp buttons."
-        ]
-      },
-      "acceptanceCriteria": [
-        "Contact section contains: phone placeholder, WhatsApp placeholder, address placeholder, hours placeholder.",
-        "Call and WhatsApp actions are functional links (tel: and wa.me).",
-        "No map embed or geolocation features are included."
-      ]
-    },
-    {
-      "id": "REQ-10",
-      "text": "Add basic on-page SEO elements: page title, meta description, and sensible heading hierarchy (one H1, then H2s per section).",
+      "id": "REQ-15",
+      "text": "Update the displayed phone number site-wide to `98431 29760` by changing `businessInfo.phone` in `frontend/src/content/siteContent.ts`, and ensure every call action uses the updated number (e.g., Hero and Contact 'Call Now' buttons and the Contact 'Phone' link).",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-1"
         ],
         "quotes": [
-          "I need to create a website..."
+          "It should be 98431 29760"
         ]
       },
       "acceptanceCriteria": [
-        "Document title mentions the service and Coimbatore.",
-        "Meta description is present and relevant.",
-        "Only one H1 exists on the page; sections use H2 headings."
+        "`frontend/src/content/siteContent.ts` contains `businessInfo.phone` set to `98431 29760` exactly as displayed text.",
+        "All `tel:` links across the site dial the updated number (including Hero and Contact CTAs).",
+        "No other component displays the old phone number."
       ]
     },
     {
-      "id": "REQ-11",
-      "text": "Render all generated images as static assets under frontend/public/assets/generated and reference them directly from the frontend (do not route images through the backend).",
+      "id": "REQ-16",
+      "text": "Update the WhatsApp number site-wide so that WhatsApp links use the correct `wa.me` format for the phone number `98431 29760` by updating `businessInfo.whatsapp` in `frontend/src/content/siteContent.ts` to the E.164 digits-only format expected by `https://wa.me/<number>` (India country code included).",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-1"
         ],
         "quotes": [
-          "with free images depicting the nature of my business"
+          "It should be 98431 29760"
         ]
       },
       "acceptanceCriteria": [
-        "All required generated images exist under frontend/public/assets/generated.",
-        "Frontend references images via static paths (e.g., /assets/generated/...).",
-        "No backend code is introduced for image serving."
+        "`businessInfo.whatsapp` is updated to an India E.164 digits-only value that corresponds to `98431 29760` (e.g., includes country code and no spaces).",
+        "All WhatsApp buttons/links across the site open a WhatsApp chat to the updated number.",
+        "No remaining WhatsApp link points to the previous number."
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "text": "Add additional free-to-use stock gallery images that clearly include washing machines and visually reflect laundry/dry cleaning services, and include them in `galleryImages` in `frontend/src/content/siteContent.ts` so they render in the Gallery grid.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "also include free images of washing machines which reflect the dry cleaning services also"
+        ]
+      },
+      "acceptanceCriteria": [
+        "At least 2 new gallery images depicting washing machines in a laundry/dry-cleaning context are added to the Gallery data (`galleryImages`).",
+        "Each new gallery item has an appropriate English `alt` text describing the image content.",
+        "The Gallery section renders the new washing machine images without layout breakage across responsive breakpoints."
+      ]
+    },
+    {
+      "id": "REQ-18",
+      "text": "Change the brand/business name display to ALL CAPS, bold, with a block-style 3D look by generating a block-style 3D text graphic for the brand name and updating `frontend/src/components/SiteHeader.tsx` and `frontend/src/components/SiteFooter.tsx` to use the new block-style 3D branding presentation (while keeping the existing tagline text present and readable).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "change MJ Steam Ironing and Dry Cleaning Services to all capitals and bold with a three dimension output",
+          "block-style"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Header branding displays the business name in ALL CAPS with a block-style 3D appearance.",
+        "Footer branding displays the business name in ALL CAPS with the same block-style 3D appearance.",
+        "The tagline text remains present and readable in both header and footer.",
+        "Branding remains responsive (does not overflow or break the header layout on mobile)."
       ]
     }
   ],
   "constraints": [
-    "Do not edit files in frontend immutable paths: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui.",
-    "Do not add maps/geolocation features or embedded map widgets.",
-    "Use English for all user-facing text."
+    "Frontend: Do not modify any files under `frontend/src/components/ui` (compose them only).",
+    "Frontend: Do not edit immutable hook files (`frontend/src/hooks/useInternetIdentity.ts`, `frontend/src/hooks/useInternetIdentity.tsx`, `frontend/src/hooks/useActor.ts`, `frontend/src/main.tsx`).",
+    "Backend must remain a single Motoko actor; no additional backend services."
   ],
   "nonGoals": [
-    "Online payment processing",
-    "Online booking or real-time pickup scheduling",
-    "User accounts or third-party authentication (beyond Internet Identity, not needed here)",
-    "Admin dashboard/CMS for updating content"
+    "Adding new sections beyond what already exists on the single-page site.",
+    "Integrating third-party authentication beyond Internet Identity.",
+    "Embedding interactive maps or adding location/map features."
   ],
   "imageRequirements": {
     "required": [
-      "Wide hero photo of steam ironing on a garment with clean, bright workspace (hero-steam-iron.dim_1600x900.jpg)",
-      "Photo of neatly folded clean laundry stack on a neutral background (gallery-laundry-stack.dim_1200x800.jpg)",
-      "Photo of dry cleaning / garment care professional handling clothes on hangers (gallery-dry-cleaning-rack.dim_1200x800.jpg)",
-      "Photo of a crisply pressed saree fabric with visible pleats texture (gallery-saree-pleats.dim_1200x800.jpg)",
-      "Photo of stain removal/spot cleaning action on fabric (gallery-stain-removal.dim_1200x800.jpg)",
-      "Photo of tailoring/needlework detail representing darning/repair (gallery-darning-needlework.dim_1200x800.jpg)"
+      "Block-style 3D text reading \"MJ STEAM IRONING AND DRY CLEANING SERVICES\" on a transparent background (brand-3d-block.dim_1600x400.png)",
+      "Photo of modern front-loading washing machines in a clean laundry/dry-cleaning setting (gallery-washing-machine-1.dim_1200x800.jpg)",
+      "Photo of a professional laundry/dry-cleaning workspace including washing machines and garment racks (gallery-washing-machine-2.dim_1200x800.jpg)"
     ],
     "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
   }
 }

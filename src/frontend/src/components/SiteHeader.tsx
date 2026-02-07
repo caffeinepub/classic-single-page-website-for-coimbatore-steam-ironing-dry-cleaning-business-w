@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { BrandMark } from './BrandMark';
 
 export function SiteHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -39,23 +40,23 @@ export function SiteHeader() {
       }`}
     >
       <div className="section-container">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between gap-4 h-16 md:h-20">
           <a
             href="#home"
             onClick={(e) => handleNavClick(e, '#home')}
-            className="text-xl md:text-2xl font-serif font-bold text-foreground hover:text-accent transition-colors"
+            className="hover:opacity-80 transition-opacity"
           >
-            Premium Laundry Care
+            <BrandMark />
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-8 flex-shrink-0">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="text-sm font-medium text-foreground/80 hover:text-accent transition-colors"
+                className="text-sm font-medium text-foreground/80 hover:text-accent transition-colors whitespace-nowrap"
               >
                 {link.label}
               </a>
@@ -65,7 +66,7 @@ export function SiteHeader() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-foreground hover:text-accent transition-colors"
+            className="lg:hidden p-2 text-foreground hover:text-accent transition-colors flex-shrink-0"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

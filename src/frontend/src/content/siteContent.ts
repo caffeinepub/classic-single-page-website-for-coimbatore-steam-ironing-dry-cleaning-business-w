@@ -1,6 +1,6 @@
 export const businessInfo = {
-  phone: '+91 98765 43210',
-  whatsapp: '919876543210',
+  phone: '98431 29760',
+  whatsapp: '919843129760',
   address: 'Coimbatore, Tamil Nadu, India',
   hours: 'Mon-Sat: 8:00 AM - 8:00 PM | Sunday: 9:00 AM - 2:00 PM',
   servicesNote: 'We provide professional steam ironing, dry cleaning, and garment care services for all fabric types.'
@@ -118,5 +118,13 @@ export const galleryImages = [
   {
     src: '/assets/generated/gallery-darning-needlework.dim_1200x800.jpg',
     alt: 'Skilled darning and garment repair service'
+  },
+  {
+    src: '/assets/generated/gallery-washing-machine-1.dim_1200x800.jpg',
+    alt: 'Industrial washing machines for professional dry cleaning services'
+  },
+  {
+    src: '/assets/generated/gallery-washing-machine-2.dim_1200x800.jpg',
+    alt: 'Modern laundry equipment and washing machines in dry cleaning facility'
   }
 ];

@@ -1,15 +1,20 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 3,
+  "projectStateVersion": 7,
   "summary": "Website for a Coimbatore-based steam ironing, laundry, and dry cleaning business with a classic, competitor-aligned design using free stock images.",
   "architectural_notes": [
-    "Use only free-to-use stock images depicting steam ironing, laundry/dry cleaning, saree pleating/ironing, stain removal; keep overall look classic/professional and competitor-aligned."
+    "Use only free-to-use stock images depicting steam ironing, laundry/dry cleaning, saree pleating/ironing, stain removal; keep overall look classic/professional and competitor-aligned.",
+    "Homepage header/top area must display the business name “MJ Steam Ironing and Dry Cleaning Services” and the tagline “The one-stop shop for all your daily clean needs.”",
+    "User requested a site-wide light-blue theme with dark text (override any previous non-blue palette preference).",
+    "Use free-to-use stock images that include washing machines and convey dry cleaning/laundry services.",
+    "Brand text styling: display business name in ALL CAPS, bold, with a block-style 3D text effect."
   ],
   "known_issues": [
-    "Previous attempt to generate/implement the website design failed with an 'unable to implement' error; user requested retry."
+    "Previous attempt to generate/implement the website design failed with an 'unable to implement' error; user requested retry.",
+    "Phone number currently displayed on the site was reported incorrect; must be updated to 98431 29760 everywhere it appears."
   ],
-  "isFixRequest": false,
-  "imageRequirements": "## Required Images\n- Wide hero photo of steam ironing on a garment with clean, bright workspace (hero-steam-iron.dim_1600x900.jpg)\n- Photo of neatly folded clean laundry stack on a neutral background (gallery-laundry-stack.dim_1200x800.jpg)\n- Photo of dry cleaning / garment care professional handling clothes on hangers (gallery-dry-cleaning-rack.dim_1200x800.jpg)\n- Photo of a crisply pressed saree fabric with visible pleats texture (gallery-saree-pleats.dim_1200x800.jpg)\n- Photo of stain removal/spot cleaning action on fabric (gallery-stain-removal.dim_1200x800.jpg)\n- Photo of tailoring/needlework detail representing darning/repair (gallery-darning-needlework.dim_1200x800.jpg)",
+  "isFixRequest": true,
+  "imageRequirements": "## Required Images\n- Block-style 3D text reading \"MJ STEAM IRONING AND DRY CLEANING SERVICES\" on a transparent background (brand-3d-block.dim_1600x400.png)\n- Photo of modern front-loading washing machines in a clean laundry/dry-cleaning setting (gallery-washing-machine-1.dim_1200x800.jpg)\n- Photo of a professional laundry/dry-cleaning workspace including washing machines and garment racks (gallery-washing-machine-2.dim_1200x800.jpg)",
   "existing_features": [
     {
       "id": "feature-create-a-responsive-single-page-marketing-website-homepage-for-a-coimbatore-tamil-nadu-india-steam-ironing-laundry-and-dry-cleaning-business-using-a-classic-professional-layout-aligned-with-common-competitor-sites",
@@ -98,12 +103,98 @@
         "REQ-11"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-update-the-top-header-brand-text-in-frontend-src-components-siteheader-tsx-to-display-the-company-name-and-tagline-exactly-as-mj-steam-ironing-and-dry-cleaning-services-the-one-stop-shop-for-all-your-daily-clean-needs",
+      "title": "Update the top header brand text in `frontend/src/components/SiteHeader.tsx` to display the company name and tagline exactly as: “MJ Steam Ironing and Dry Cleaning Services - The one-stop shop for all your daily clean needs.”",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-footer-brand-text-in-frontend-src-components-sitefooter-tsx-to-use-the-same-company-name-and-tagline-so-branding-is-consistent-across-the-site",
+      "title": "Update the footer brand text in `frontend/src/components/SiteFooter.tsx` to use the same company name and tagline so branding is consistent across the site.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-clean-light-blue-visual-theme-light-blue-backgrounds-with-dark-near-black-text-consistently-across-the-entire-site-by-updating-the-global-theme-tokens-in-frontend-src-index-css-e-g-background-muted-card-primary-accent-border-and-related-foreground-tokens-ensuring-all-sections-and-components-including-header-footer-cards-and-muted-section-backgrounds-like-gallery-reflect-the-light-blue-styling",
+      "title": "Apply a clean light-blue visual theme (light-blue backgrounds with dark/near-black text) consistently across the entire site by updating the global theme tokens in `frontend/src/index.css` (e.g., `--background`, `--muted`, `--card`, `--primary`, `--accent`, `--border`, and related foreground tokens), ensuring all sections and components (including header/footer, cards, and muted section backgrounds like Gallery) reflect the light-blue styling.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-displayed-phone-number-site-wide-to-98431-29760-by-changing-businessinfo-phone-in-frontend-src-content-sitecontent-ts-and-ensure-every-call-action-uses-the-updated-number-e-g-hero-and-contact-call-now-buttons-and-the-contact-phone-link",
+      "title": "Update the displayed phone number site-wide to `98431 29760` by changing `businessInfo.phone` in `frontend/src/content/siteContent.ts`, and ensure every call action uses the updated number (e.g., Hero and Contact 'Call Now' buttons and the Contact 'Phone' link).",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-whatsapp-number-site-wide-so-that-whatsapp-links-use-the-correct-wa-me-format-for-the-phone-number-98431-29760-by-updating-businessinfo-whatsapp-in-frontend-src-content-sitecontent-ts-to-the-e-164-digits-only-format-expected-by-https-wa-me-number-india-country-code-included",
+      "title": "Update the WhatsApp number site-wide so that WhatsApp links use the correct `wa.me` format for the phone number `98431 29760` by updating `businessInfo.whatsapp` in `frontend/src/content/siteContent.ts` to the E.164 digits-only format expected by `https://wa.me/<number>` (India country code included).",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-additional-free-to-use-stock-gallery-images-that-clearly-include-washing-machines-and-visually-reflect-laundry-dry-cleaning-services-and-include-them-in-galleryimages-in-frontend-src-content-sitecontent-ts-so-they-render-in-the-gallery-grid",
+      "title": "Add additional free-to-use stock gallery images that clearly include washing machines and visually reflect laundry/dry cleaning services, and include them in `galleryImages` in `frontend/src/content/siteContent.ts` so they render in the Gallery grid.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-change-the-brand-business-name-display-to-all-caps-bold-with-a-block-style-3d-look-by-generating-a-block-style-3d-text-graphic-for-the-brand-name-and-updating-frontend-src-components-siteheader-tsx-and-frontend-src-components-sitefooter-tsx-to-use-the-new-block-style-3d-branding-presentation-while-keeping-the-existing-tagline-text-present-and-readable",
+      "title": "Change the brand/business name display to ALL CAPS, bold, with a block-style 3D look by generating a block-style 3D text graphic for the brand name and updating `frontend/src/components/SiteHeader.tsx` and `frontend/src/components/SiteFooter.tsx` to use the new block-style 3D branding presentation (while keeping the existing tagline text present and readable).",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
     {
       "id": "AR-1",
       "summary": "Design a classic, professional website for a steam ironing/laundry/dry cleaning business (services: steam ironing, dry cleaning, stain removal, darning, saree pleating & ironing) aligned with competitor layouts, using free stock images.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add company name and tagline at the top of the homepage/header: “MJ Steam Ironing and Dry Cleaning Services - The one-stop shop for all your daily clean needs.”",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Apply a clean light-blue theme (light-blue backgrounds with dark/near-black text) consistently across all sections of the site.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add free-to-use stock images that include washing machines and reflect dry cleaning/laundry services (for gallery/visual sections).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Update the displayed phone number site-wide (including Contact section and Call/WhatsApp actions) to: 98431 29760.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Change the brand/business name display to ALL CAPS, bold, with a block-style 3D text effect.",
       "reqIds": [],
       "status": "pending"
     }

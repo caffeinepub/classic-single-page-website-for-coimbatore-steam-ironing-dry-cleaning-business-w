@@ -2,6 +2,8 @@ import { Phone, MessageCircle } from 'lucide-react';
 import { businessInfo } from '../../content/siteContent';
 
 export function HeroSection() {
+  const sanitizedPhone = businessInfo.phone.replace(/\s+/g, '');
+
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-16 md:pt-20">
       {/* Background Image */}
@@ -25,7 +27,7 @@ export function HeroSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href={`tel:${businessInfo.phone}`}
+              href={`tel:${sanitizedPhone}`}
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors shadow-elegant"
             >
               <Phone size={20} />
