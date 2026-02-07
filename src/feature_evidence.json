@@ -1,0 +1,224 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-responsive-single-page-marketing-website-homepage-for-a-coimbatore-tamil-nadu-india-steam-ironing-laundry-and-dry-cleaning-business-using-a-classic-professional-layout-aligned-with-common-competitor-sites",
+      "featureTitle": "Create a responsive single-page marketing website homepage for a Coimbatore (Tamil Nadu, India) steam ironing, laundry, and dry cleaning business, using a classic, professional layout aligned with common competitor sites.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/SiteFooter.tsx",
+        "frontend/src/components/SiteHeader.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-coherent-classic-visual-theme-colors-typography-spacing-component-styling-and-apply-it-consistently-across-the-site-do-not-use-a-blue-purple-primary-palette",
+      "featureTitle": "Implement a coherent classic visual theme (colors, typography, spacing, component styling) and apply it consistently across the site. Do not use a blue/purple primary palette.",
+      "files": [
+        "frontend/index.html",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-hero-section-with-a-strong-headline-short-supporting-text-and-clear-calls-to-action-for-contacting-the-business-call-and-whatsapp",
+      "featureTitle": "Add a Hero section with a strong headline, short supporting text, and clear calls-to-action for contacting the business (Call and WhatsApp).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/sections/HeroSection.tsx",
+        "frontend/src/content/siteContent.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-services-section-with-cards-for-these-services-steam-ironing-dry-cleaning-stain-removal-darning-saree-pleating-ironing-each-card-must-include-a-short-description",
+      "featureTitle": "Create a Services section with cards for these services: Steam Ironing, Dry Cleaning, Stain Removal, Darning, Saree Pleating & Ironing. Each card must include a short description.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/sections/ServicesSection.tsx",
+        "frontend/src/content/siteContent.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-why-choose-us-section-with-4-6-classic-trust-building-highlights-relevant-to-local-customers-e-g-fabric-safe-process-on-time-delivery-affordable-pricing-experienced-handling-of-sarees",
+      "featureTitle": "Add a 'Why Choose Us' section with 4–6 classic, trust-building highlights relevant to local customers (e.g., fabric-safe process, on-time delivery, affordable pricing, experienced handling of sarees).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/sections/WhyChooseUsSection.tsx",
+        "frontend/src/content/siteContent.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-how-it-works-section-describing-the-process-in-3-4-steps-e-g-drop-off-call-cleaning-care-steam-pressing-finishing-pickup-delivery-keep-wording-non-committal-about-pickup-delivery-do-not-promise-unless-explicitly-configured",
+      "featureTitle": "Add a 'How It Works' section describing the process in 3–4 steps (e.g., Drop-off/Call, Cleaning & Care, Steam Pressing/Finishing, Pickup/Delivery). Keep wording non-committal about pickup/delivery (do not promise unless explicitly configured).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/sections/HowItWorksSection.tsx",
+        "frontend/src/content/siteContent.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-testimonials-section-with-3-placeholder-customer-reviews-text-only-written-in-a-realistic-professional-tone-do-not-attribute-to-real-people-unless-the-user-provides-names",
+      "featureTitle": "Add a Testimonials section with 3 placeholder customer reviews (text-only), written in a realistic, professional tone. Do not attribute to real people unless the user provides names.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/sections/TestimonialsSection.tsx",
+        "frontend/src/content/siteContent.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-gallery-section-that-displays-a-grid-of-free-stock-images-depicting-steam-ironing-laundry-care-dry-cleaning-and-neatly-pressed-sarees-fabrics",
+      "featureTitle": "Add a Gallery section that displays a grid of free stock images depicting steam ironing, laundry care, dry cleaning, and neatly pressed sarees/fabrics.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/sections/GallerySection.tsx",
+        "frontend/src/content/siteContent.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-contact-section-with-business-details-and-simple-contact-actions-call-whatsapp-include-fields-placeholders-for-address-in-coimbatore-business-hours-and-a-short-note-about-services-do-not-embed-interactive-maps",
+      "featureTitle": "Add a Contact section with business details and simple contact actions (Call, WhatsApp). Include fields/placeholders for Address in Coimbatore, Business Hours, and a short note about services. Do not embed interactive maps.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/sections/ContactSection.tsx",
+        "frontend/src/content/siteContent.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-basic-on-page-seo-elements-page-title-meta-description-and-sensible-heading-hierarchy-one-h1-then-h2s-per-section",
+      "featureTitle": "Add basic on-page SEO elements: page title, meta description, and sensible heading hierarchy (one H1, then H2s per section).",
+      "files": [
+        "frontend/index.html",
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-render-all-generated-images-as-static-assets-under-frontend-public-assets-generated-and-reference-them-directly-from-the-frontend-do-not-route-images-through-the-backend",
+      "featureTitle": "Render all generated images as static assets under frontend/public/assets/generated and reference them directly from the frontend (do not route images through the backend).",
+      "files": [
+        "frontend/src/components/sections/GallerySection.tsx",
+        "frontend/src/components/sections/HeroSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

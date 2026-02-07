@@ -1,0 +1,304 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-07T01:14:03.628Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 11,
+    "implemented": 11,
+    "items": [
+      {
+        "id": "REQ-1",
+        "summary": "Create a responsive single-page marketing website homepage for a Coimbatore (Tamil Nadu, India) steam ironing, laundry, and dry cleaning business, using a classic, professional layout aligned with common competitor sites.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/components/SiteHeader.tsx",
+          "frontend/src/components/SiteFooter.tsx",
+          "frontend/src/index.css"
+        ],
+        "matchedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/components/SiteHeader.tsx",
+          "frontend/src/components/SiteFooter.tsx",
+          "frontend/src/index.css"
+        ]
+      },
+      {
+        "id": "REQ-10",
+        "summary": "Add basic on-page SEO elements: page title, meta description, and sensible heading hierarchy (one H1, then H2s per section).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/index.html",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/index.html",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-11",
+        "summary": "Render all generated images as static assets under frontend/public/assets/generated and reference them directly from the frontend (do not route images through the backend).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/sections/HeroSection.tsx",
+          "frontend/src/components/sections/GallerySection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/sections/HeroSection.tsx",
+          "frontend/src/components/sections/GallerySection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-2",
+        "summary": "Implement a coherent classic visual theme (colors, typography, spacing, component styling) and apply it consistently across the site. Do not use a blue/purple primary palette.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/index.html",
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js"
+        ],
+        "matchedFiles": [
+          "frontend/index.html",
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js"
+        ]
+      },
+      {
+        "id": "REQ-3",
+        "summary": "Add a Hero section with a strong headline, short supporting text, and clear calls-to-action for contacting the business (Call and WhatsApp).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/sections/HeroSection.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/content/siteContent.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/sections/HeroSection.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/content/siteContent.ts"
+        ]
+      },
+      {
+        "id": "REQ-4",
+        "summary": "Create a Services section with cards for these services: Steam Ironing, Dry Cleaning, Stain Removal, Darning, Saree Pleating & Ironing. Each card must include a short description.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/sections/ServicesSection.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/content/siteContent.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/sections/ServicesSection.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/content/siteContent.ts"
+        ]
+      },
+      {
+        "id": "REQ-5",
+        "summary": "Add a 'Why Choose Us' section with 4–6 classic, trust-building highlights relevant to local customers (e.g., fabric-safe process, on-time delivery, affordable pricing, experienced handling of sarees).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/sections/WhyChooseUsSection.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/content/siteContent.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/sections/WhyChooseUsSection.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/content/siteContent.ts"
+        ]
+      },
+      {
+        "id": "REQ-6",
+        "summary": "Add a 'How It Works' section describing the process in 3–4 steps (e.g., Drop-off/Call, Cleaning & Care, Steam Pressing/Finishing, Pickup/Delivery). Keep wording non-committal about pickup/delivery (do not promise unless explicitly configured).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/sections/HowItWorksSection.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/content/siteContent.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/sections/HowItWorksSection.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/content/siteContent.ts"
+        ]
+      },
+      {
+        "id": "REQ-7",
+        "summary": "Add a Testimonials section with 3 placeholder customer reviews (text-only), written in a realistic, professional tone. Do not attribute to real people unless the user provides names.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/sections/TestimonialsSection.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/content/siteContent.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/sections/TestimonialsSection.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/content/siteContent.ts"
+        ]
+      },
+      {
+        "id": "REQ-8",
+        "summary": "Add a Gallery section that displays a grid of free stock images depicting steam ironing, laundry care, dry cleaning, and neatly pressed sarees/fabrics.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/sections/GallerySection.tsx",
+          "frontend/src/App.tsx",
+          "frontend/public/assets/generated/hero-steam-iron.dim_1600x900.jpg",
+          "frontend/public/assets/generated/gallery-laundry-stack.dim_1200x800.jpg",
+          "frontend/public/assets/generated/gallery-dry-cleaning-rack.dim_1200x800.jpg",
+          "frontend/public/assets/generated/gallery-saree-pleats.dim_1200x800.jpg",
+          "frontend/public/assets/generated/gallery-stain-removal.dim_1200x800.jpg",
+          "frontend/public/assets/generated/gallery-darning-needlework.dim_1200x800.jpg",
+          "frontend/src/content/siteContent.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/sections/GallerySection.tsx",
+          "frontend/src/App.tsx",
+          "frontend/public/assets/generated/hero-steam-iron.dim_1600x900.jpg",
+          "frontend/public/assets/generated/gallery-laundry-stack.dim_1200x800.jpg",
+          "frontend/public/assets/generated/gallery-dry-cleaning-rack.dim_1200x800.jpg",
+          "frontend/public/assets/generated/gallery-saree-pleats.dim_1200x800.jpg",
+          "frontend/public/assets/generated/gallery-stain-removal.dim_1200x800.jpg",
+          "frontend/public/assets/generated/gallery-darning-needlework.dim_1200x800.jpg",
+          "frontend/src/content/siteContent.ts"
+        ]
+      },
+      {
+        "id": "REQ-9",
+        "summary": "Add a Contact section with business details and simple contact actions (Call, WhatsApp). Include fields/placeholders for Address in Coimbatore, Business Hours, and a short note about services. Do not embed interactive maps.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/sections/ContactSection.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/content/siteContent.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/sections/ContactSection.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/content/siteContent.ts"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "build-request.json",
+    "build-template/Dockerfile",
+    "build-template/LICENSE",
+    "build-template/README.md",
+    "build-template/deploy.sh",
+    "build-template/icp.yaml",
+    "build-template/package.json",
+    "build-template/pnpm-lock.yaml",
+    "build-template/pnpm-workspace.yaml",
+    "build-template/scripts/prune-unused-images.js",
+    "build-template/scripts/resize-images.js",
+    "build-template/src/backend/canister.yaml",
+    "build-template/src/backend/system-idl/aaaaa-aa.did",
+    "build-template/src/frontend/canister.yaml",
+    "build-template/src/frontend/components.json",
+    "build-template/src/frontend/env.json",
+    "build-template/src/frontend/eslint-rules/no-bigint-in-query-keys.js",
+    "build-template/src/frontend/eslint-rules/require-internet-identity-provider.js",
+    "build-template/src/frontend/eslint.config.js",
+    "build-template/src/frontend/package.json",
+    "build-template/src/frontend/postcss.config.js",
+    "build-template/src/frontend/src/components/ui/accordion.tsx",
+    "build-template/src/frontend/src/components/ui/alert-dialog.tsx",
+    "build-template/src/frontend/src/components/ui/alert.tsx",
+    "build-template/src/frontend/src/components/ui/aspect-ratio.tsx",
+    "build-template/src/frontend/src/components/ui/avatar.tsx",
+    "build-template/src/frontend/src/components/ui/badge.tsx",
+    "build-template/src/frontend/src/components/ui/breadcrumb.tsx",
+    "build-template/src/frontend/src/components/ui/button.tsx",
+    "build-template/src/frontend/src/components/ui/calendar.tsx",
+    "build-template/src/frontend/src/components/ui/card.tsx",
+    "build-template/src/frontend/src/components/ui/carousel.tsx",
+    "build-template/src/frontend/src/components/ui/chart.tsx",
+    "build-template/src/frontend/src/components/ui/checkbox.tsx",
+    "build-template/src/frontend/src/components/ui/collapsible.tsx",
+    "build-template/src/frontend/src/components/ui/command.tsx",
+    "build-template/src/frontend/src/components/ui/context-menu.tsx",
+    "build-template/src/frontend/src/components/ui/dialog.tsx",
+    "build-template/src/frontend/src/components/ui/drawer.tsx",
+    "build-template/src/frontend/src/components/ui/dropdown-menu.tsx",
+    "build-template/src/frontend/src/components/ui/form.tsx",
+    "build-template/src/frontend/src/components/ui/hover-card.tsx",
+    "build-template/src/frontend/src/components/ui/input-otp.tsx",
+    "build-template/src/frontend/src/components/ui/input.tsx",
+    "build-template/src/frontend/src/components/ui/label.tsx",
+    "build-template/src/frontend/src/components/ui/menubar.tsx",
+    "build-template/src/frontend/src/components/ui/navigation-menu.tsx",
+    "build-template/src/frontend/src/components/ui/pagination.tsx",
+    "build-template/src/frontend/src/components/ui/popover.tsx",
+    "build-template/src/frontend/src/components/ui/progress.tsx",
+    "build-template/src/frontend/src/components/ui/radio-group.tsx",
+    "build-template/src/frontend/src/components/ui/resizable.tsx",
+    "build-template/src/frontend/src/components/ui/scroll-area.tsx",
+    "build-template/src/frontend/src/components/ui/select.tsx",
+    "build-template/src/frontend/src/components/ui/separator.tsx",
+    "build-template/src/frontend/src/components/ui/sheet.tsx",
+    "build-template/src/frontend/src/components/ui/sidebar.tsx",
+    "build-template/src/frontend/src/components/ui/skeleton.tsx",
+    "build-template/src/frontend/src/components/ui/slider.tsx",
+    "build-template/src/frontend/src/components/ui/sonner.tsx",
+    "build-template/src/frontend/src/components/ui/switch.tsx",
+    "build-template/src/frontend/src/components/ui/table.tsx",
+    "build-template/src/frontend/src/components/ui/tabs.tsx",
+    "build-template/src/frontend/src/components/ui/textarea.tsx",
+    "build-template/src/frontend/src/components/ui/toggle-group.tsx",
+    "build-template/src/frontend/src/components/ui/toggle.tsx",
+    "build-template/src/frontend/src/components/ui/tooltip.tsx",
+    "build-template/src/frontend/src/hooks/use-mobile.tsx",
+    "build-template/src/frontend/src/lib/utils.ts",
+    "build-template/src/frontend/tsconfig.json",
+    "build-template/src/frontend/vite.config.js",
+    "build-template/tsconfig.json",
+    "caffeine.lock.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/public/assets/generated/gallery-darning-needlework.dim_1200x800.jpg",
+    "frontend/public/assets/generated/gallery-dry-cleaning-rack.dim_1200x800.jpg",
+    "frontend/public/assets/generated/gallery-laundry-stack.dim_1200x800.jpg",
+    "frontend/public/assets/generated/gallery-saree-pleats.dim_1200x800.jpg",
+    "frontend/public/assets/generated/gallery-stain-removal.dim_1200x800.jpg",
+    "frontend/public/assets/generated/hero-steam-iron.dim_1600x900.jpg",
+    "frontend/src/App.tsx",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/SiteFooter.tsx",
+    "frontend/src/components/SiteHeader.tsx",
+    "frontend/src/components/sections/ContactSection.tsx",
+    "frontend/src/components/sections/GallerySection.tsx",
+    "frontend/src/components/sections/HeroSection.tsx",
+    "frontend/src/components/sections/HowItWorksSection.tsx",
+    "frontend/src/components/sections/ServicesSection.tsx",
+    "frontend/src/components/sections/TestimonialsSection.tsx",
+    "frontend/src/components/sections/WhyChooseUsSection.tsx",
+    "frontend/src/config.ts",
+    "frontend/src/content/siteContent.ts",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/ui-summary.json",
+    "frontend/src/utils/StorageClient.ts",
+    "frontend/tailwind.config.js",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

@@ -1,0 +1,32 @@
+import { galleryImages } from '../../content/siteContent';
+
+export function GallerySection() {
+  return (
+    <section id="gallery" className="bg-muted/20">
+      <div className="section-container">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Our Work</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Professional garment care and attention to detail in every service
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {galleryImages.map((image, index) => (
+            <div
+              key={index}
+              className="relative overflow-hidden rounded-lg shadow-sm hover:shadow-elegant transition-shadow aspect-[4/3] bg-muted"
+            >
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

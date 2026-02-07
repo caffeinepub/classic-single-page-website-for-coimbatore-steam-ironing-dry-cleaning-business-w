@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.5rem;
+        
+        /* Classic warm palette - charcoal, cream, warm gold accents */
+        --background: 0.98 0.005 60;
+        --foreground: 0.25 0.015 30;
+        
+        --card: 1 0 0;
+        --card-foreground: 0.25 0.015 30;
+        
+        --popover: 1 0 0;
+        --popover-foreground: 0.25 0.015 30;
+        
+        --primary: 0.35 0.02 40;
+        --primary-foreground: 0.98 0.005 60;
+        
+        --secondary: 0.92 0.01 50;
+        --secondary-foreground: 0.25 0.015 30;
+        
+        --muted: 0.95 0.008 55;
+        --muted-foreground: 0.50 0.012 35;
+        
+        --accent: 0.75 0.12 75;
+        --accent-foreground: 0.20 0.015 30;
+        
+        --destructive: 0.55 0.20 25;
+        --destructive-foreground: 0.98 0.005 60;
+        
+        --border: 0.88 0.008 50;
+        --input: 0.88 0.008 50;
+        --ring: 0.75 0.12 75;
+        
+        --chart-1: 0.646 0.222 41.116;
+        --chart-2: 0.6 0.118 184.704;
+        --chart-3: 0.398 0.07 227.392;
+        --chart-4: 0.828 0.189 84.429;
+        --chart-5: 0.769 0.188 70.08;
+    }
+
+    .dark {
+        --background: 0.18 0.015 30;
+        --foreground: 0.95 0.008 55;
+        
+        --card: 0.22 0.015 32;
+        --card-foreground: 0.95 0.008 55;
+        
+        --popover: 0.22 0.015 32;
+        --popover-foreground: 0.95 0.008 55;
+        
+        --primary: 0.85 0.01 50;
+        --primary-foreground: 0.20 0.015 30;
+        
+        --secondary: 0.28 0.015 35;
+        --secondary-foreground: 0.95 0.008 55;
+        
+        --muted: 0.28 0.015 35;
+        --muted-foreground: 0.65 0.010 45;
+        
+        --accent: 0.75 0.12 75;
+        --accent-foreground: 0.95 0.008 55;
+        
+        --destructive: 0.60 0.22 25;
+        --destructive-foreground: 0.95 0.008 55;
+        
+        --border: 0.32 0.015 35;
+        --input: 0.32 0.015 35;
+        --ring: 0.75 0.12 75;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-weight: 600;
+    }
+}
+
+@layer utilities {
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    section {
+        @apply py-16 md:py-24;
+    }
+    
+    .section-container {
+        @apply container mx-auto px-4 md:px-6 lg:px-8;
+    }
+}

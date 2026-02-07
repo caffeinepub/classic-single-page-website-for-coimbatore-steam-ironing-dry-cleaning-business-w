@@ -1,0 +1,316 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Classic single-page marketing site for Coimbatore steam ironing & dry cleaning",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Build a responsive single-page homepage with classic sectioned layout and smooth-scroll navigation.",
+      "acceptanceCriteria": [
+        "Homepage renders without errors and is usable on mobile, tablet, and desktop breakpoints.",
+        "Page is structured into clear sections: Hero, Services, Why Choose Us, How It Works, Testimonials, Gallery, Contact.",
+        "All copy is in English and refers to Coimbatore, Tamil Nadu, India.",
+        "Navigation (header links) smoothly scrolls to each section."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "create",
+          "description": "Create the single-page homepage composition with the required sections (Hero, Services, Why Choose Us, How It Works, Testimonials, Gallery, Contact) and section anchor IDs for navigation."
+        },
+        {
+          "path": "frontend/src/components/SiteHeader.tsx",
+          "operation": "create",
+          "description": "Create a responsive sticky header with in-page anchor links to each section for smooth scrolling (no additional pages/routes). Use shadcn-ui components (e.g., Button) for consistent styling; verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/SiteFooter.tsx",
+          "operation": "create",
+          "description": "Create a simple footer consistent with the classic theme (business name + location mention) and optional quick links to sections."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Add global styles to support the classic layout, including smooth scrolling behavior and consistent section spacing (e.g., set scroll-behavior and shared section padding/margins)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Implement a coherent classic visual theme (typography, colors, spacing) avoiding blue/purple primary.",
+      "acceptanceCriteria": [
+        "Typography uses a classic, readable pairing (e.g., serif headings + sans body, or an equivalent classic pairing).",
+        "Color palette feels classic/professional (e.g., warm neutrals, charcoal, off-white, subtle gold/emerald accents) and avoids blue/purple as the primary theme.",
+        "Buttons, cards, section headers, and spacing are consistent across sections."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Add classic font loading (serif for headings + sans for body) and apply to the document for consistent typography across the site."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Define classic theme tokens using CSS variables (shadcn-style) and base typography rules; ensure primary/accent colors are not blue/purple and spacing is consistent site-wide."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Adjust theme extensions if needed to align with the classic palette and typography (keeping the existing CSS-variable-based color system intact)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Add a Hero section with headline, supporting text, and accessible Call/WhatsApp CTAs.",
+      "acceptanceCriteria": [
+        "Hero includes a headline comparable to “Premium Steam Ironing & Dry Cleaning in Coimbatore” (or an equivalent).",
+        "Hero includes two prominent CTA buttons: “Call” (tel: link) and “WhatsApp” (wa.me link).",
+        "CTA buttons are accessible (keyboard focus styles, discernible text)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/sections/HeroSection.tsx",
+          "operation": "create",
+          "description": "Implement the Hero section with one H1, short supporting text referencing Coimbatore, Tamil Nadu, India, and two primary CTAs (tel: and wa.me). Use shadcn-ui Button for accessible, consistent CTAs; verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire HeroSection into the top of the single-page layout and ensure it is the only H1 on the page."
+        },
+        {
+          "path": "frontend/src/content/siteContent.ts",
+          "operation": "create",
+          "description": "Centralize business placeholders (phone, WhatsApp number, address placeholder, hours placeholder) and key copy so CTAs and Contact section share consistent values."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Create a Services section with exactly 5 service cards and short descriptions.",
+      "acceptanceCriteria": [
+        "Exactly the 5 specified services are displayed.",
+        "Each service appears as a visually consistent card with title + 1–2 sentence description.",
+        "Cards are responsive (grid adapts across breakpoints)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/sections/ServicesSection.tsx",
+          "operation": "create",
+          "description": "Render exactly five service cards: Steam Ironing, Dry Cleaning, Stain Removal, Darning, Saree Pleating & Ironing; each with a 1–2 sentence description. Use shadcn-ui Card for consistent card styling; verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire ServicesSection into the page and ensure its section has a stable anchor ID used by header navigation."
+        },
+        {
+          "path": "frontend/src/content/siteContent.ts",
+          "operation": "modify",
+          "description": "Add the services list (titles + short descriptions) as content data used by ServicesSection."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Add a trust-building 'Why Choose Us' section with 4–6 local, garment-care highlights.",
+      "acceptanceCriteria": [
+        "Section shows 4–6 bullet points or mini-cards.",
+        "Copy is specific to garment care and local trust (not generic tech/product phrasing)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/sections/WhyChooseUsSection.tsx",
+          "operation": "create",
+          "description": "Create a classic trust/highlights section (4–6 items) focused on fabric-safe handling, saree experience, transparent pricing, and local reliability in Coimbatore. Use shadcn-ui Card (or similar) for consistent highlight styling; verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire WhyChooseUsSection into the page with an anchor ID for smooth-scroll navigation."
+        },
+        {
+          "path": "frontend/src/content/siteContent.ts",
+          "operation": "modify",
+          "description": "Add the Why Choose Us highlights as editable content data to keep copy consistent and localized."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Add a 'How It Works' section with 3–4 steps, phrased as options (non-committal about pickup/delivery).",
+      "acceptanceCriteria": [
+        "Section displays 3–4 steps in order.",
+        "Language does not guarantee pickup/delivery; it is phrased as options (e.g., “Drop-off or contact us” / “Pickup/Delivery (if available)”)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/sections/HowItWorksSection.tsx",
+          "operation": "create",
+          "description": "Implement a 3–4 step process section with carefully worded, non-committal pickup/delivery phrasing (e.g., 'Drop-off or contact us', 'Pickup/Delivery (if available)'). Use shadcn-ui components (e.g., Card) for consistent step styling; verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire HowItWorksSection into the page with an anchor ID for navigation."
+        },
+        {
+          "path": "frontend/src/content/siteContent.ts",
+          "operation": "modify",
+          "description": "Add the ordered steps as content data so wording stays consistent and easy to update."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Add a Testimonials section with 3 realistic placeholder reviews, no real-person attribution.",
+      "acceptanceCriteria": [
+        "Three testimonials render consistently and look credible.",
+        "No real-person names or unverifiable claims are included."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/sections/TestimonialsSection.tsx",
+          "operation": "create",
+          "description": "Render three text-only testimonials with professional, realistic tone and anonymous attribution (e.g., 'Local customer'). Use shadcn-ui Card for consistent layout; verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire TestimonialsSection into the page with an anchor ID for navigation."
+        },
+        {
+          "path": "frontend/src/content/siteContent.ts",
+          "operation": "modify",
+          "description": "Add three anonymous testimonial entries as content data (no real names; avoid unverifiable claims)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Add a Gallery section with a responsive grid of free stock images relevant to the business.",
+      "acceptanceCriteria": [
+        "Gallery displays at least 6 images in a responsive grid.",
+        "Images are optimized for the web (reasonable file sizes, correct dimensions, object-fit handling).",
+        "Each image includes meaningful alt text in English."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/sections/GallerySection.tsx",
+          "operation": "create",
+          "description": "Create a responsive gallery grid rendering the required free stock images from static paths, with object-fit handling and meaningful English alt text. Use shadcn-ui components (e.g., Card) if needed for consistent framing; verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire GallerySection into the page with an anchor ID for navigation."
+        },
+        {
+          "path": "frontend/public/assets/generated/hero-steam-iron.dim_1600x900.jpg",
+          "operation": "create",
+          "description": "Add the generated hero image asset at the exact path frontend/public/assets/generated/hero-steam-iron.dim_1600x900.jpg."
+        },
+        {
+          "path": "frontend/public/assets/generated/gallery-laundry-stack.dim_1200x800.jpg",
+          "operation": "create",
+          "description": "Add the generated gallery image asset at the exact path frontend/public/assets/generated/gallery-laundry-stack.dim_1200x800.jpg."
+        },
+        {
+          "path": "frontend/public/assets/generated/gallery-dry-cleaning-rack.dim_1200x800.jpg",
+          "operation": "create",
+          "description": "Add the generated gallery image asset at the exact path frontend/public/assets/generated/gallery-dry-cleaning-rack.dim_1200x800.jpg."
+        },
+        {
+          "path": "frontend/public/assets/generated/gallery-saree-pleats.dim_1200x800.jpg",
+          "operation": "create",
+          "description": "Add the generated gallery image asset at the exact path frontend/public/assets/generated/gallery-saree-pleats.dim_1200x800.jpg."
+        },
+        {
+          "path": "frontend/public/assets/generated/gallery-stain-removal.dim_1200x800.jpg",
+          "operation": "create",
+          "description": "Add the generated gallery image asset at the exact path frontend/public/assets/generated/gallery-stain-removal.dim_1200x800.jpg."
+        },
+        {
+          "path": "frontend/public/assets/generated/gallery-darning-needlework.dim_1200x800.jpg",
+          "operation": "create",
+          "description": "Add the generated gallery image asset at the exact path frontend/public/assets/generated/gallery-darning-needlework.dim_1200x800.jpg."
+        },
+        {
+          "path": "frontend/src/content/siteContent.ts",
+          "operation": "modify",
+          "description": "Add the gallery image list (static paths + alt text) so the GallerySection renders at least 6 images, including: frontend/public/assets/generated/gallery-laundry-stack.dim_1200x800.jpg, frontend/public/assets/generated/gallery-dry-cleaning-rack.dim_1200x800.jpg, frontend/public/assets/generated/gallery-saree-pleats.dim_1200x800.jpg, frontend/public/assets/generated/gallery-stain-removal.dim_1200x800.jpg, frontend/public/assets/generated/gallery-darning-needlework.dim_1200x800.jpg, and optionally reuse frontend/public/assets/generated/hero-steam-iron.dim_1600x900.jpg."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Add a Contact section with business details placeholders and Call/WhatsApp actions; no maps.",
+      "acceptanceCriteria": [
+        "Contact section contains: phone placeholder, WhatsApp placeholder, address placeholder, hours placeholder.",
+        "Call and WhatsApp actions are functional links (tel: and wa.me).",
+        "No map embed or geolocation features are included."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/sections/ContactSection.tsx",
+          "operation": "create",
+          "description": "Implement a contact/details section showing placeholders for phone, WhatsApp, address in Coimbatore, and business hours, plus a short note about services; include functional tel: and wa.me links and do not include any map widgets. Use shadcn-ui Button for the contact actions; verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire ContactSection into the page with an anchor ID for navigation."
+        },
+        {
+          "path": "frontend/src/content/siteContent.ts",
+          "operation": "modify",
+          "description": "Store Contact section placeholders (phone, WhatsApp number, address placeholder, hours placeholder, short services note) used by Hero and Contact sections."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Add on-page SEO: document title, meta description, and correct heading hierarchy.",
+      "acceptanceCriteria": [
+        "Document title mentions the service and Coimbatore.",
+        "Meta description is present and relevant.",
+        "Only one H1 exists on the page; sections use H2 headings."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Update the document title to include the service and Coimbatore, and add a meta description relevant to steam ironing, laundry, and dry cleaning in Coimbatore, Tamil Nadu, India."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Ensure the page uses exactly one H1 (in the Hero) and all other section titles are H2s (or appropriate subheadings beneath H2s)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "summary": "Serve generated images as static assets under frontend/public/assets/generated and reference them directly from the frontend.",
+      "acceptanceCriteria": [
+        "All required generated images exist under frontend/public/assets/generated.",
+        "Frontend references images via static paths (e.g., /assets/generated/...).",
+        "No backend code is introduced for image serving."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/sections/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Reference the hero image via a static path corresponding to frontend/public/assets/generated/hero-steam-iron.dim_1600x900.jpg and ensure it is rendered without involving any backend routing."
+        },
+        {
+          "path": "frontend/src/components/sections/GallerySection.tsx",
+          "operation": "modify",
+          "description": "Reference gallery images via static paths corresponding to: frontend/public/assets/generated/gallery-laundry-stack.dim_1200x800.jpg, frontend/public/assets/generated/gallery-dry-cleaning-rack.dim_1200x800.jpg, frontend/public/assets/generated/gallery-saree-pleats.dim_1200x800.jpg, frontend/public/assets/generated/gallery-stain-removal.dim_1200x800.jpg, frontend/public/assets/generated/gallery-darning-needlework.dim_1200x800.jpg (and optionally frontend/public/assets/generated/hero-steam-iron.dim_1600x900.jpg), ensuring the UI uses direct static asset paths."
+        }
+      ]
+    }
+  ]
+}

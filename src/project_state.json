@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Website for a Coimbatore-based steam ironing, laundry, and dry cleaning business with a classic, competitor-aligned design using free stock images.",
+  "architectural_notes": [
+    "Use only free-to-use stock images depicting steam ironing, laundry/dry cleaning, saree pleating/ironing, stain removal; keep overall look classic/professional and competitor-aligned."
+  ],
+  "known_issues": [
+    "Previous attempt to generate/implement the website design failed with an 'unable to implement' error; user requested retry."
+  ],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Wide hero photo of steam ironing on a garment with clean, bright workspace (hero-steam-iron.dim_1600x900.jpg)\n- Photo of neatly folded clean laundry stack on a neutral background (gallery-laundry-stack.dim_1200x800.jpg)\n- Photo of dry cleaning / garment care professional handling clothes on hangers (gallery-dry-cleaning-rack.dim_1200x800.jpg)\n- Photo of a crisply pressed saree fabric with visible pleats texture (gallery-saree-pleats.dim_1200x800.jpg)\n- Photo of stain removal/spot cleaning action on fabric (gallery-stain-removal.dim_1200x800.jpg)\n- Photo of tailoring/needlework detail representing darning/repair (gallery-darning-needlework.dim_1200x800.jpg)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-responsive-single-page-marketing-website-homepage-for-a-coimbatore-tamil-nadu-india-steam-ironing-laundry-and-dry-cleaning-business-using-a-classic-professional-layout-aligned-with-common-competitor-sites",
+      "title": "Create a responsive single-page marketing website homepage for a Coimbatore (Tamil Nadu, India) steam ironing, laundry, and dry cleaning business, using a classic, professional layout aligned with common competitor sites.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-coherent-classic-visual-theme-colors-typography-spacing-component-styling-and-apply-it-consistently-across-the-site-do-not-use-a-blue-purple-primary-palette",
+      "title": "Implement a coherent classic visual theme (colors, typography, spacing, component styling) and apply it consistently across the site. Do not use a blue/purple primary palette.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-hero-section-with-a-strong-headline-short-supporting-text-and-clear-calls-to-action-for-contacting-the-business-call-and-whatsapp",
+      "title": "Add a Hero section with a strong headline, short supporting text, and clear calls-to-action for contacting the business (Call and WhatsApp).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-services-section-with-cards-for-these-services-steam-ironing-dry-cleaning-stain-removal-darning-saree-pleating-ironing-each-card-must-include-a-short-description",
+      "title": "Create a Services section with cards for these services: Steam Ironing, Dry Cleaning, Stain Removal, Darning, Saree Pleating & Ironing. Each card must include a short description.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-why-choose-us-section-with-4-6-classic-trust-building-highlights-relevant-to-local-customers-e-g-fabric-safe-process-on-time-delivery-affordable-pricing-experienced-handling-of-sarees",
+      "title": "Add a 'Why Choose Us' section with 4–6 classic, trust-building highlights relevant to local customers (e.g., fabric-safe process, on-time delivery, affordable pricing, experienced handling of sarees).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-how-it-works-section-describing-the-process-in-3-4-steps-e-g-drop-off-call-cleaning-care-steam-pressing-finishing-pickup-delivery-keep-wording-non-committal-about-pickup-delivery-do-not-promise-unless-explicitly-configured",
+      "title": "Add a 'How It Works' section describing the process in 3–4 steps (e.g., Drop-off/Call, Cleaning & Care, Steam Pressing/Finishing, Pickup/Delivery). Keep wording non-committal about pickup/delivery (do not promise unless explicitly configured).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-testimonials-section-with-3-placeholder-customer-reviews-text-only-written-in-a-realistic-professional-tone-do-not-attribute-to-real-people-unless-the-user-provides-names",
+      "title": "Add a Testimonials section with 3 placeholder customer reviews (text-only), written in a realistic, professional tone. Do not attribute to real people unless the user provides names.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-gallery-section-that-displays-a-grid-of-free-stock-images-depicting-steam-ironing-laundry-care-dry-cleaning-and-neatly-pressed-sarees-fabrics",
+      "title": "Add a Gallery section that displays a grid of free stock images depicting steam ironing, laundry care, dry cleaning, and neatly pressed sarees/fabrics.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-contact-section-with-business-details-and-simple-contact-actions-call-whatsapp-include-fields-placeholders-for-address-in-coimbatore-business-hours-and-a-short-note-about-services-do-not-embed-interactive-maps",
+      "title": "Add a Contact section with business details and simple contact actions (Call, WhatsApp). Include fields/placeholders for Address in Coimbatore, Business Hours, and a short note about services. Do not embed interactive maps.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-basic-on-page-seo-elements-page-title-meta-description-and-sensible-heading-hierarchy-one-h1-then-h2s-per-section",
+      "title": "Add basic on-page SEO elements: page title, meta description, and sensible heading hierarchy (one H1, then H2s per section).",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-all-generated-images-as-static-assets-under-frontend-public-assets-generated-and-reference-them-directly-from-the-frontend-do-not-route-images-through-the-backend",
+      "title": "Render all generated images as static assets under frontend/public/assets/generated and reference them directly from the frontend (do not route images through the backend).",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Design a classic, professional website for a steam ironing/laundry/dry cleaning business (services: steam ironing, dry cleaning, stain removal, darning, saree pleating & ironing) aligned with competitor layouts, using free stock images.",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Classic single-page website for Coimbatore steam ironing & dry cleaning business (with free stock imagery)",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

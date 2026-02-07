@@ -1,0 +1,16 @@
+{
+  "frontend/index.html": "HTML entry point with SEO meta tags for Coimbatore steam ironing and dry cleaning services, includes Google Fonts for Playfair Display (serif) and Inter (sans-serif).",
+  "frontend/src/index.css": "Global styles with classic warm color palette (charcoal, cream, gold accents) using OKLCH color system, custom typography with serif headings, and smooth scroll behavior.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the theme with classic color tokens, custom font families (Playfair Display serif, Inter sans), elegant shadows, and consistent border radius.",
+  "frontend/src/content/siteContent.ts": "Centralized content data including business info (phone, WhatsApp, address, hours), services list, why-choose-us highlights, how-it-works steps, testimonials, and gallery images.",
+  "frontend/src/components/SiteHeader.tsx": "Sticky header component with smooth-scroll navigation links, mobile menu toggle, and scroll-based background transition.",
+  "frontend/src/components/SiteFooter.tsx": "Footer component with brand info, quick links, social media icons, and caffeine.ai attribution with heart icon.",
+  "frontend/src/components/sections/HeroSection.tsx": "Hero section with full-screen background image, headline, supporting text, and prominent Call/WhatsApp CTA buttons.",
+  "frontend/src/components/sections/ServicesSection.tsx": "Services section displaying five service cards (Steam Ironing, Dry Cleaning, Stain Removal, Darning, Saree Pleating) with icons and descriptions.",
+  "frontend/src/components/sections/WhyChooseUsSection.tsx": "Trust-building section with six highlight cards featuring fabric-safe process, saree expertise, transparent pricing, local trust, quick turnaround, and attention to detail.",
+  "frontend/src/components/sections/HowItWorksSection.tsx": "Four-step process section with non-committal pickup/delivery language, showing drop-off, cleaning, pressing, and collection steps.",
+  "frontend/src/components/sections/TestimonialsSection.tsx": "Testimonials section displaying three anonymous customer reviews in card layout with quote icons.",
+  "frontend/src/components/sections/GallerySection.tsx": "Responsive gallery grid displaying six images from static assets with hover effects and lazy loading.",
+  "frontend/src/components/sections/ContactSection.tsx": "Contact section with business details (phone, WhatsApp, location, hours) and prominent CTA buttons in a two-column layout.",
+  "frontend/src/App.tsx": "Main application component composing all sections (Hero, Services, Why Choose Us, How It Works, Testimonials, Gallery, Contact) with header and footer."
+}
