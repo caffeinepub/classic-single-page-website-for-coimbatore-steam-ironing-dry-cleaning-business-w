@@ -3,100 +3,112 @@
 @tailwind utilities;
 
 @layer base {
-    :root {
-        --radius: 0.75rem;
-        
-        /* Enhanced vibrant warm palette - Light mode */
-        --background: 0.98 0.02 55;
-        --foreground: 0.20 0.03 35;
-        
-        --card: 0.99 0.015 50;
-        --card-foreground: 0.20 0.03 35;
-        
-        --popover: 0.99 0.015 50;
-        --popover-foreground: 0.20 0.03 35;
-        
-        --primary: 0.58 0.16 25;
-        --primary-foreground: 0.99 0.01 55;
-        
-        --secondary: 0.90 0.03 48;
-        --secondary-foreground: 0.20 0.03 35;
-        
-        --muted: 0.93 0.02 52;
-        --muted-foreground: 0.48 0.04 42;
-        
-        --accent: 0.62 0.14 155;
-        --accent-foreground: 0.99 0.01 55;
-        
-        --destructive: 0.52 0.22 20;
-        --destructive-foreground: 0.99 0.01 55;
-        
-        --border: 0.88 0.03 48;
-        --input: 0.88 0.03 48;
-        --ring: 0.58 0.16 25;
-        
-        --chart-1: 0.646 0.222 41.116;
-        --chart-2: 0.6 0.118 184.704;
-        --chart-3: 0.398 0.07 227.392;
-        --chart-4: 0.828 0.189 84.429;
-        --chart-5: 0.769 0.188 70.08;
-    }
-
-    .dark {
-        --background: 0.18 0.03 35;
-        --foreground: 0.96 0.02 55;
-        
-        --card: 0.22 0.03 33;
-        --card-foreground: 0.96 0.02 55;
-        
-        --popover: 0.22 0.03 33;
-        --popover-foreground: 0.96 0.02 55;
-        
-        --primary: 0.65 0.17 25;
-        --primary-foreground: 0.18 0.03 35;
-        
-        --secondary: 0.28 0.03 38;
-        --secondary-foreground: 0.96 0.02 55;
-        
-        --muted: 0.28 0.03 38;
-        --muted-foreground: 0.70 0.04 48;
-        
-        --accent: 0.68 0.15 155;
-        --accent-foreground: 0.96 0.02 55;
-        
-        --destructive: 0.58 0.24 20;
-        --destructive-foreground: 0.96 0.02 55;
-        
-        --border: 0.32 0.03 38;
-        --input: 0.32 0.03 38;
-        --ring: 0.65 0.17 25;
-    }
-
-    * {
-        @apply border-border;
-    }
+  :root {
+    /* Enhanced vibrant warm color palette with deeper, more saturated OKLCH values */
+    --background: oklch(98% 0.01 90);
+    --foreground: oklch(25% 0.02 90);
+    --card: oklch(100% 0 0);
+    --card-foreground: oklch(25% 0.02 90);
+    --popover: oklch(100% 0 0);
+    --popover-foreground: oklch(25% 0.02 90);
     
-    body {
-        @apply bg-background text-foreground;
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    }
+    /* Richer terracotta primary - deeper and more saturated */
+    --primary: oklch(58% 0.18 35);
+    --primary-foreground: oklch(100% 0 0);
     
-    h1, h2, h3, h4, h5, h6 {
-        font-family: 'Playfair Display', Georgia, serif;
-        font-weight: 600;
-    }
+    /* Vibrant sage green accent - more saturated for better visual impact */
+    --accent: oklch(65% 0.14 145);
+    --accent-foreground: oklch(100% 0 0);
+    
+    --secondary: oklch(96% 0.01 90);
+    --secondary-foreground: oklch(25% 0.02 90);
+    --muted: oklch(95% 0.01 90);
+    --muted-foreground: oklch(50% 0.01 90);
+    --destructive: oklch(58% 0.22 25);
+    --destructive-foreground: oklch(100% 0 0);
+    --border: oklch(90% 0.01 90);
+    --input: oklch(90% 0.01 90);
+    --ring: oklch(58% 0.18 35);
+    --radius: 0.75rem;
+    --chart-1: oklch(58% 0.18 35);
+    --chart-2: oklch(65% 0.14 145);
+    --chart-3: oklch(75% 0.12 85);
+    --chart-4: oklch(68% 0.15 55);
+    --chart-5: oklch(62% 0.16 25);
+  }
+
+  .dark {
+    --background: oklch(18% 0.02 90);
+    --foreground: oklch(95% 0.01 90);
+    --card: oklch(20% 0.02 90);
+    --card-foreground: oklch(95% 0.01 90);
+    --popover: oklch(20% 0.02 90);
+    --popover-foreground: oklch(95% 0.01 90);
+    
+    /* Richer terracotta primary for dark mode - deeper and more saturated */
+    --primary: oklch(65% 0.16 35);
+    --primary-foreground: oklch(18% 0.02 90);
+    
+    /* Vibrant sage green accent for dark mode - more saturated */
+    --accent: oklch(70% 0.12 145);
+    --accent-foreground: oklch(18% 0.02 90);
+    
+    --secondary: oklch(25% 0.02 90);
+    --secondary-foreground: oklch(95% 0.01 90);
+    --muted: oklch(25% 0.02 90);
+    --muted-foreground: oklch(65% 0.01 90);
+    --destructive: oklch(62% 0.20 25);
+    --destructive-foreground: oklch(95% 0.01 90);
+    --border: oklch(30% 0.02 90);
+    --input: oklch(30% 0.02 90);
+    --ring: oklch(65% 0.16 35);
+    --chart-1: oklch(65% 0.16 35);
+    --chart-2: oklch(70% 0.12 145);
+    --chart-3: oklch(78% 0.10 85);
+    --chart-4: oklch(72% 0.13 55);
+    --chart-5: oklch(68% 0.14 25);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
 }
 
 @layer utilities {
-    html {
-        scroll-behavior: smooth;
+  .section-container {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+  
+  /* Enhanced shadow with increased opacity for better depth */
+  .shadow-elegant {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  .shadow-warm {
+    box-shadow: 0 10px 40px rgba(210, 105, 75, 0.25), 0 4px 12px rgba(210, 105, 75, 0.15);
+  }
+  
+  /* Floating animation for steam iron */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
     }
-    
-    section {
-        @apply py-20 md:py-28;
+    50% {
+      transform: translateY(-20px);
     }
-    
-    .section-container {
-        @apply container mx-auto px-4 md:px-6 lg:px-8;
-    }
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
 }

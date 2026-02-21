@@ -1,11 +1,10 @@
 # Specification
 
 ## Summary
-**Goal:** Enhance the hero section with a more vibrant background image and harmonize text colors to create an inviting, cohesive first impression.
+**Goal:** Update the hero section with a blue background and add a steam iron image on the right side.
 
 **Planned changes:**
-- Replace hero background with a more vibrant, visually complete image
-- Adjust hero section text colors to complement the new background
-- Ensure optimal readability and visual hierarchy of all hero content
+- Change hero section background color to blue
+- Add a small steam iron image positioned on the right side of the hero section
 
-**User-visible outcome:** Users will see a more vibrant and polished hero section with harmonious colors that create a professional, inviting first impression while maintaining clear readability.
+**User-visible outcome:** The hero section displays with a blue background and features a steam iron image on the right side.

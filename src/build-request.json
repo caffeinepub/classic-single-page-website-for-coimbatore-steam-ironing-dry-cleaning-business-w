@@ -1,77 +1,56 @@
 {
   "kind": "build_request",
-  "title": "Enhance hero section visual design with vibrant colors and harmonious text-image styling",
-  "projectName": "Clean Express",
+  "title": "Change background to blue and add steam iron image",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-6",
-      "text": "Update the hero section background image to be more vibrant and visually complete, ensuring it creates a pleasant and engaging first impression",
+      "id": "REQ-9",
+      "text": "Change the hero section background color to blue",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-user-latest"
+          "msg-latest"
         ],
         "quotes": [
-          "make the first page with the image more pleasant and vibrant"
+          "change the background color to Blue"
         ]
       },
       "acceptanceCriteria": [
-        "Background image is visually vibrant and complete",
-        "Image creates an inviting, professional first impression",
-        "Visual composition feels polished and finished"
+        "Hero section displays a blue background color",
+        "Blue color is visible and replaces the current background styling"
       ]
     },
     {
-      "id": "REQ-7",
-      "text": "Adjust text colors in the hero section to harmonize with the new background image, ensuring optimal readability and visual cohesion",
+      "id": "REQ-10",
+      "text": "Add a small steam iron image positioned on the right side of the hero section",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-user-latest"
+          "msg-latest"
         ],
         "quotes": [
-          "change the colors of the text and the picture to match each one"
+          "add a small picture with an steam iron on the right"
         ]
       },
       "acceptanceCriteria": [
-        "Text colors complement the background image colors",
-        "Text remains highly readable against the background",
-        "Color scheme creates a cohesive, harmonious visual experience"
-      ]
-    },
-    {
-      "id": "REQ-8",
-      "text": "Ensure all necessary information is prominently displayed in the hero section with improved visual hierarchy and completeness",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-user-latest"
-        ],
-        "quotes": [
-          "all the information added is needed"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Key business information (headline, tagline, CTA) is clearly visible",
-        "Visual hierarchy guides user attention effectively",
-        "No essential information is missing or unclear"
+        "A steam iron image is visible in the hero section",
+        "The image is positioned on the right side",
+        "The image size is appropriately small and does not overwhelm the layout"
       ]
     }
   ],
   "constraints": [
-    "Maintain existing hero section component structure (frontend/src/components/sections/HeroSection.tsx)",
-    "Preserve CTA button functionality (phone and WhatsApp contact)",
-    "Keep responsive layout behavior intact"
+    "Maintain existing hero section layout and content structure",
+    "Preserve the responsive design of the hero section"
   ],
   "nonGoals": [
-    "Redesigning other sections beyond the hero/first page",
-    "Changing the overall site color scheme defined in index.css",
-    "Modifying navigation or footer components"
+    "Changing other section backgrounds",
+    "Modifying the overall color scheme beyond the hero section",
+    "Adding steam iron imagery to other sections"
   ],
   "imageRequirements": {
     "required": [
-      "Vibrant and complete hero background image for laundry service website with warm, inviting atmosphere and professional aesthetic (hero-vibrant.dim_1920x1080.png)"
+      "Small realistic steam iron on transparent or white background, positioned for right-side placement (steam-iron.dim_300x300.png)"
     ],
     "edits": []
   }

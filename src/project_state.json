@@ -1,33 +1,25 @@
 {
   "schemaVersion": "1.0.0",
   "projectStateVersion": 3,
-  "summary": "Visual design improvement project focusing on first page aesthetics and color harmony",
+  "summary": "Landing page with blue background and steam iron image",
   "architectural_notes": [],
   "known_issues": [],
   "isFixRequest": false,
-  "imageRequirements": "## Required Images\n- Vibrant and complete hero background image for laundry service website with warm, inviting atmosphere and professional aesthetic (hero-vibrant.dim_1920x1080.png)",
+  "imageRequirements": "## Required Images\n- Small realistic steam iron on transparent or white background, positioned for right-side placement (steam-iron.dim_300x300.png)",
   "existing_features": [
     {
-      "id": "feature-update-the-hero-section-background-image-to-be-more-vibrant-and-visually-complete-ensuring-it-creates-a-pleasant-and-engaging-first-impression",
-      "title": "Update the hero section background image to be more vibrant and visually complete, ensuring it creates a pleasant and engaging first impression",
+      "id": "feature-change-the-hero-section-background-color-to-blue",
+      "title": "Change the hero section background color to blue",
       "reqIds": [
-        "REQ-6"
+        "REQ-9"
       ],
       "version": 1
     },
     {
-      "id": "feature-adjust-text-colors-in-the-hero-section-to-harmonize-with-the-new-background-image-ensuring-optimal-readability-and-visual-cohesion",
-      "title": "Adjust text colors in the hero section to harmonize with the new background image, ensuring optimal readability and visual cohesion",
+      "id": "feature-add-a-small-steam-iron-image-positioned-on-the-right-side-of-the-hero-section",
+      "title": "Add a small steam iron image positioned on the right side of the hero section",
       "reqIds": [
-        "REQ-7"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-ensure-all-necessary-information-is-prominently-displayed-in-the-hero-section-with-improved-visual-hierarchy-and-completeness",
-      "title": "Ensure all necessary information is prominently displayed in the hero section with improved visual hierarchy and completeness",
-      "reqIds": [
-        "REQ-8"
+        "REQ-10"
       ],
       "version": 1
     }
@@ -35,12 +27,18 @@
   "new_feature_requests": [
     {
       "id": "AR-1",
-      "summary": "Enhance first page visual design with vibrant colors and better text-image harmony",
+      "summary": "Change background color to blue",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add small steam iron picture on the right side",
       "reqIds": [],
       "status": "pending"
     }
   ],
-  "projectName": "Clean Express",
+  "projectName": "Change background to blue and add steam iron image",
   "clarification_mode": "instant",
   "clarification_rounds": 0
 }

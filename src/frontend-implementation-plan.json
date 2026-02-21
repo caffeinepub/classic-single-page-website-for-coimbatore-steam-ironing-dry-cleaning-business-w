@@ -1,53 +1,36 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Enhance hero section visual design with vibrant colors and harmonious text-image styling",
+  "title": "Change background to blue and add steam iron image",
   "requirements": [
     {
-      "id": "REQ-6",
-      "summary": "Update the hero section background image to be more vibrant and visually complete, ensuring it creates a pleasant and engaging first impression",
+      "id": "REQ-9",
+      "summary": "Change the hero section background color to blue",
       "acceptanceCriteria": [
-        "Background image is visually vibrant and complete",
-        "Image creates an inviting, professional first impression",
-        "Visual composition feels polished and finished"
+        "Hero section displays a blue background color",
+        "Blue color is visible and replaces the current background styling"
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/sections/HeroSection.tsx",
           "operation": "modify",
-          "description": "Replace the existing background image with the newly generated vibrant hero background image at frontend/public/assets/generated/hero-vibrant.dim_1920x1080.png. Update the background styling to ensure the image displays with optimal vibrancy and visual impact, creating an inviting and professional first impression for visitors."
+          "description": "Update the hero section background styling to use a blue color. Modify the gradient overlays or background color classes to display blue instead of the current background. Ensure the blue background is visible and works with the existing text content and overlay structure while maintaining readability of the hero text and CTA buttons."
         }
       ]
     },
     {
-      "id": "REQ-7",
-      "summary": "Adjust text colors in the hero section to harmonize with the new background image, ensuring optimal readability and visual cohesion",
+      "id": "REQ-10",
+      "summary": "Add a small steam iron image positioned on the right side of the hero section",
       "acceptanceCriteria": [
-        "Text colors complement the background image colors",
-        "Text remains highly readable against the background",
-        "Color scheme creates a cohesive, harmonious visual experience"
+        "A steam iron image is visible in the hero section",
+        "The image is positioned on the right side",
+        "The image size is appropriately small and does not overwhelm the layout"
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/sections/HeroSection.tsx",
           "operation": "modify",
-          "description": "Adjust text colors (headline, tagline, CTA button text) to harmonize with the new vibrant background image. Ensure text contrast meets accessibility standards while creating visual cohesion with the background. Update text shadows, overlays, or background treatments as needed to maintain readability across all viewport sizes."
-        }
-      ]
-    },
-    {
-      "id": "REQ-8",
-      "summary": "Ensure all necessary information is prominently displayed in the hero section with improved visual hierarchy and completeness",
-      "acceptanceCriteria": [
-        "Key business information (headline, tagline, CTA) is clearly visible",
-        "Visual hierarchy guides user attention effectively",
-        "No essential information is missing or unclear"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/sections/HeroSection.tsx",
-          "operation": "modify",
-          "description": "Review and enhance the visual hierarchy of hero content elements (business headline, tagline, CTA buttons). Ensure spacing, sizing, and positioning create clear visual flow that guides user attention from headline to tagline to call-to-action. Verify all essential business information from siteContent is prominently displayed and properly emphasized."
+          "description": "Add the generated steam iron image (frontend/public/assets/generated/steam-iron.dim_300x300.png) to the hero section layout, positioned on the right side. The image should be sized appropriately small to complement the hero content without overwhelming the layout. Implement responsive positioning to ensure the image works well across different screen sizes and does not interfere with the headline text or CTA buttons. Use appropriate CSS classes or inline styles to control size, positioning, and responsive behavior."
         }
       ]
     }

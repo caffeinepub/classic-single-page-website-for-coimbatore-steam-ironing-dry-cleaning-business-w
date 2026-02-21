@@ -2,8 +2,8 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-update-the-hero-section-background-image-to-be-more-vibrant-and-visually-complete-ensuring-it-creates-a-pleasant-and-engaging-first-impression",
-      "featureTitle": "Update the hero section background image to be more vibrant and visually complete, ensuring it creates a pleasant and engaging first impression",
+      "featureId": "feature-change-the-hero-section-background-color-to-blue",
+      "featureTitle": "Change the hero section background color to blue",
       "files": [
         "frontend/src/components/sections/HeroSection.tsx"
       ],
@@ -15,13 +15,13 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-6"
+        "REQ-9"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-adjust-text-colors-in-the-hero-section-to-harmonize-with-the-new-background-image-ensuring-optimal-readability-and-visual-cohesion",
-      "featureTitle": "Adjust text colors in the hero section to harmonize with the new background image, ensuring optimal readability and visual cohesion",
+      "featureId": "feature-add-a-small-steam-iron-image-positioned-on-the-right-side-of-the-hero-section",
+      "featureTitle": "Add a small steam iron image positioned on the right side of the hero section",
       "files": [
         "frontend/src/components/sections/HeroSection.tsx"
       ],
@@ -33,25 +33,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-7"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-ensure-all-necessary-information-is-prominently-displayed-in-the-hero-section-with-improved-visual-hierarchy-and-completeness",
-      "featureTitle": "Ensure all necessary information is prominently displayed in the hero section with improved visual hierarchy and completeness",
-      "files": [
-        "frontend/src/components/sections/HeroSection.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-8"
+        "REQ-10"
       ],
       "confidence": "high"
     }
