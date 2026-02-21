@@ -5,27 +5,27 @@ const icons = [Shield, Award, DollarSign, Heart, Clock, Eye];
 
 export function WhyChooseUsSection() {
   return (
-    <section id="why-choose-us">
+    <section id="why-choose-us" className="bg-background">
       <div className="section-container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Why Choose Us</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-4 text-foreground">Why Choose Us</h2>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Trusted by Coimbatore families for quality, care, and reliability
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {whyChooseUs.map((item, index) => {
             const Icon = icons[index];
             return (
               <div
                 key={item.title}
-                className="bg-card rounded-lg p-6 border border-border hover:border-accent/50 transition-colors"
+                className="bg-card rounded-2xl p-8 border border-border hover:border-accent/40 transition-all duration-300 hover:shadow-elegant"
               >
-                <div className="w-10 h-10 bg-accent/10 rounded-full flex items-center justify-center mb-4">
-                  <Icon className="text-accent" size={20} />
+                <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-5">
+                  <Icon className="text-accent" size={22} />
                 </div>
-                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                <h3 className="text-lg font-semibold mb-3 text-foreground">{item.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
               </div>
             );

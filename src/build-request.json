@@ -1,128 +1,78 @@
 {
   "kind": "build_request",
-  "title": "Apply light-blue theme, fix phone number, add washing machine images, and add block-style 3D ALL CAPS branding",
+  "title": "Enhance hero section visual design with vibrant colors and harmonious text-image styling",
+  "projectName": "Clean Express",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-14",
-      "text": "Apply a clean light-blue visual theme (light-blue backgrounds with dark/near-black text) consistently across the entire site by updating the global theme tokens in `frontend/src/index.css` (e.g., `--background`, `--muted`, `--card`, `--primary`, `--accent`, `--border`, and related foreground tokens), ensuring all sections and components (including header/footer, cards, and muted section backgrounds like Gallery) reflect the light-blue styling.",
+      "id": "REQ-6",
+      "text": "Update the hero section background image to be more vibrant and visually complete, ensuring it creates a pleasant and engaging first impression",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-1"
+          "msg-user-latest"
         ],
         "quotes": [
-          "apply the light blue now"
+          "make the first page with the image more pleasant and vibrant"
         ]
       },
       "acceptanceCriteria": [
-        "The site background reads as light-blue (not warm/cream) across all sections.",
-        "Body text uses a dark/near-black color with sufficient contrast on the new light-blue backgrounds.",
-        "Cards, borders, and muted surfaces use cohesive light-blue-tinted neutrals (no remaining warm/cream surfaces).",
-        "Accent/primary colors remain readable and consistent with the light-blue theme across buttons, icons, and links."
+        "Background image is visually vibrant and complete",
+        "Image creates an inviting, professional first impression",
+        "Visual composition feels polished and finished"
       ]
     },
     {
-      "id": "REQ-15",
-      "text": "Update the displayed phone number site-wide to `98431 29760` by changing `businessInfo.phone` in `frontend/src/content/siteContent.ts`, and ensure every call action uses the updated number (e.g., Hero and Contact 'Call Now' buttons and the Contact 'Phone' link).",
+      "id": "REQ-7",
+      "text": "Adjust text colors in the hero section to harmonize with the new background image, ensuring optimal readability and visual cohesion",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-1"
+          "msg-user-latest"
         ],
         "quotes": [
-          "It should be 98431 29760"
+          "change the colors of the text and the picture to match each one"
         ]
       },
       "acceptanceCriteria": [
-        "`frontend/src/content/siteContent.ts` contains `businessInfo.phone` set to `98431 29760` exactly as displayed text.",
-        "All `tel:` links across the site dial the updated number (including Hero and Contact CTAs).",
-        "No other component displays the old phone number."
+        "Text colors complement the background image colors",
+        "Text remains highly readable against the background",
+        "Color scheme creates a cohesive, harmonious visual experience"
       ]
     },
     {
-      "id": "REQ-16",
-      "text": "Update the WhatsApp number site-wide so that WhatsApp links use the correct `wa.me` format for the phone number `98431 29760` by updating `businessInfo.whatsapp` in `frontend/src/content/siteContent.ts` to the E.164 digits-only format expected by `https://wa.me/<number>` (India country code included).",
+      "id": "REQ-8",
+      "text": "Ensure all necessary information is prominently displayed in the hero section with improved visual hierarchy and completeness",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-1"
+          "msg-user-latest"
         ],
         "quotes": [
-          "It should be 98431 29760"
+          "all the information added is needed"
         ]
       },
       "acceptanceCriteria": [
-        "`businessInfo.whatsapp` is updated to an India E.164 digits-only value that corresponds to `98431 29760` (e.g., includes country code and no spaces).",
-        "All WhatsApp buttons/links across the site open a WhatsApp chat to the updated number.",
-        "No remaining WhatsApp link points to the previous number."
-      ]
-    },
-    {
-      "id": "REQ-17",
-      "text": "Add additional free-to-use stock gallery images that clearly include washing machines and visually reflect laundry/dry cleaning services, and include them in `galleryImages` in `frontend/src/content/siteContent.ts` so they render in the Gallery grid.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-1"
-        ],
-        "quotes": [
-          "also include free images of washing machines which reflect the dry cleaning services also"
-        ]
-      },
-      "acceptanceCriteria": [
-        "At least 2 new gallery images depicting washing machines in a laundry/dry-cleaning context are added to the Gallery data (`galleryImages`).",
-        "Each new gallery item has an appropriate English `alt` text describing the image content.",
-        "The Gallery section renders the new washing machine images without layout breakage across responsive breakpoints."
-      ]
-    },
-    {
-      "id": "REQ-18",
-      "text": "Change the brand/business name display to ALL CAPS, bold, with a block-style 3D look by generating a block-style 3D text graphic for the brand name and updating `frontend/src/components/SiteHeader.tsx` and `frontend/src/components/SiteFooter.tsx` to use the new block-style 3D branding presentation (while keeping the existing tagline text present and readable).",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-1"
-        ],
-        "quotes": [
-          "change MJ Steam Ironing and Dry Cleaning Services to all capitals and bold with a three dimension output",
-          "block-style"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Header branding displays the business name in ALL CAPS with a block-style 3D appearance.",
-        "Footer branding displays the business name in ALL CAPS with the same block-style 3D appearance.",
-        "The tagline text remains present and readable in both header and footer.",
-        "Branding remains responsive (does not overflow or break the header layout on mobile)."
+        "Key business information (headline, tagline, CTA) is clearly visible",
+        "Visual hierarchy guides user attention effectively",
+        "No essential information is missing or unclear"
       ]
     }
   ],
   "constraints": [
-    "Frontend: Do not modify any files under `frontend/src/components/ui` (compose them only).",
-    "Frontend: Do not edit immutable hook files (`frontend/src/hooks/useInternetIdentity.ts`, `frontend/src/hooks/useInternetIdentity.tsx`, `frontend/src/hooks/useActor.ts`, `frontend/src/main.tsx`).",
-    "Backend must remain a single Motoko actor; no additional backend services."
+    "Maintain existing hero section component structure (frontend/src/components/sections/HeroSection.tsx)",
+    "Preserve CTA button functionality (phone and WhatsApp contact)",
+    "Keep responsive layout behavior intact"
   ],
   "nonGoals": [
-    "Adding new sections beyond what already exists on the single-page site.",
-    "Integrating third-party authentication beyond Internet Identity.",
-    "Embedding interactive maps or adding location/map features."
+    "Redesigning other sections beyond the hero/first page",
+    "Changing the overall site color scheme defined in index.css",
+    "Modifying navigation or footer components"
   ],
   "imageRequirements": {
     "required": [
-      "Block-style 3D text reading \"MJ STEAM IRONING AND DRY CLEANING SERVICES\" on a transparent background (brand-3d-block.dim_1600x400.png)",
-      "Photo of modern front-loading washing machines in a clean laundry/dry-cleaning setting (gallery-washing-machine-1.dim_1200x800.jpg)",
-      "Photo of a professional laundry/dry-cleaning workspace including washing machines and garment racks (gallery-washing-machine-2.dim_1200x800.jpg)"
+      "Vibrant and complete hero background image for laundry service website with warm, inviting atmosphere and professional aesthetic (hero-vibrant.dim_1920x1080.png)"
     ],
     "edits": []
-  },
-  "userProfileUpdate": {
-    "goalsToAdd": [],
-    "goalsToRemove": [],
-    "preferencesToAdd": [],
-    "preferencesToRemove": [],
-    "miscToAdd": [],
-    "miscToRemove": [],
-    "fieldsToSet": {},
-    "fieldsToDelete": []
   }
 }

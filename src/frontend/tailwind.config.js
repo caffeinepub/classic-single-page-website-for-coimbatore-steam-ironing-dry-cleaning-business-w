@@ -55,6 +55,18 @@ export default {
                     3: 'oklch(var(--chart-3))',
                     4: 'oklch(var(--chart-4))',
                     5: 'oklch(var(--chart-5))'
+                },
+                terracotta: {
+                    DEFAULT: 'oklch(var(--primary))',
+                    foreground: 'oklch(var(--primary-foreground))'
+                },
+                sage: {
+                    DEFAULT: 'oklch(var(--accent))',
+                    foreground: 'oklch(var(--accent-foreground))'
+                },
+                cream: {
+                    DEFAULT: 'oklch(var(--background))',
+                    foreground: 'oklch(var(--foreground))'
                 }
             },
             borderRadius: {
@@ -68,7 +80,8 @@ export default {
             },
             boxShadow: {
                 xs: '0 1px 2px 0 rgba(0,0,0,0.05)',
-                elegant: '0 4px 20px rgba(0,0,0,0.08)'
+                elegant: '0 4px 20px rgba(0,0,0,0.12)',
+                warm: '0 8px 30px rgba(180, 100, 80, 0.2)'
             },
             keyframes: {
                 'accordion-down': {

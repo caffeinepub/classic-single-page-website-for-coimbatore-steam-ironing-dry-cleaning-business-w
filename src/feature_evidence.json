@@ -2,10 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-apply-a-clean-light-blue-visual-theme-light-blue-backgrounds-with-dark-near-black-text-consistently-across-the-entire-site-by-updating-the-global-theme-tokens-in-frontend-src-index-css-e-g-background-muted-card-primary-accent-border-and-related-foreground-tokens-ensuring-all-sections-and-components-including-header-footer-cards-and-muted-section-backgrounds-like-gallery-reflect-the-light-blue-styling",
-      "featureTitle": "Apply a clean light-blue visual theme (light-blue backgrounds with dark/near-black text) consistently across the entire site by updating the global theme tokens in `frontend/src/index.css` (e.g., `--background`, `--muted`, `--card`, `--primary`, `--accent`, `--border`, and related foreground tokens), ensuring all sections and components (including header/footer, cards, and muted section backgrounds like Gallery) reflect the light-blue styling.",
+      "featureId": "feature-update-the-hero-section-background-image-to-be-more-vibrant-and-visually-complete-ensuring-it-creates-a-pleasant-and-engaging-first-impression",
+      "featureTitle": "Update the hero section background image to be more vibrant and visually complete, ensuring it creates a pleasant and engaging first impression",
       "files": [
-        "frontend/src/index.css"
+        "frontend/src/components/sections/HeroSection.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -15,17 +15,15 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-14"
+        "REQ-6"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-update-the-displayed-phone-number-site-wide-to-98431-29760-by-changing-businessinfo-phone-in-frontend-src-content-sitecontent-ts-and-ensure-every-call-action-uses-the-updated-number-e-g-hero-and-contact-call-now-buttons-and-the-contact-phone-link",
-      "featureTitle": "Update the displayed phone number site-wide to `98431 29760` by changing `businessInfo.phone` in `frontend/src/content/siteContent.ts`, and ensure every call action uses the updated number (e.g., Hero and Contact 'Call Now' buttons and the Contact 'Phone' link).",
+      "featureId": "feature-adjust-text-colors-in-the-hero-section-to-harmonize-with-the-new-background-image-ensuring-optimal-readability-and-visual-cohesion",
+      "featureTitle": "Adjust text colors in the hero section to harmonize with the new background image, ensuring optimal readability and visual cohesion",
       "files": [
-        "frontend/src/components/sections/ContactSection.tsx",
-        "frontend/src/components/sections/HeroSection.tsx",
-        "frontend/src/content/siteContent.ts"
+        "frontend/src/components/sections/HeroSection.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -35,15 +33,15 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-15"
+        "REQ-7"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-update-the-whatsapp-number-site-wide-so-that-whatsapp-links-use-the-correct-wa-me-format-for-the-phone-number-98431-29760-by-updating-businessinfo-whatsapp-in-frontend-src-content-sitecontent-ts-to-the-e-164-digits-only-format-expected-by-https-wa-me-number-india-country-code-included",
-      "featureTitle": "Update the WhatsApp number site-wide so that WhatsApp links use the correct `wa.me` format for the phone number `98431 29760` by updating `businessInfo.whatsapp` in `frontend/src/content/siteContent.ts` to the E.164 digits-only format expected by `https://wa.me/<number>` (India country code included).",
+      "featureId": "feature-ensure-all-necessary-information-is-prominently-displayed-in-the-hero-section-with-improved-visual-hierarchy-and-completeness",
+      "featureTitle": "Ensure all necessary information is prominently displayed in the hero section with improved visual hierarchy and completeness",
       "files": [
-        "frontend/src/content/siteContent.ts"
+        "frontend/src/components/sections/HeroSection.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -53,45 +51,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-16"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-add-additional-free-to-use-stock-gallery-images-that-clearly-include-washing-machines-and-visually-reflect-laundry-dry-cleaning-services-and-include-them-in-galleryimages-in-frontend-src-content-sitecontent-ts-so-they-render-in-the-gallery-grid",
-      "featureTitle": "Add additional free-to-use stock gallery images that clearly include washing machines and visually reflect laundry/dry cleaning services, and include them in `galleryImages` in `frontend/src/content/siteContent.ts` so they render in the Gallery grid.",
-      "files": [
-        "frontend/src/content/siteContent.ts"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-17"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-change-the-brand-business-name-display-to-all-caps-bold-with-a-block-style-3d-look-by-generating-a-block-style-3d-text-graphic-for-the-brand-name-and-updating-frontend-src-components-siteheader-tsx-and-frontend-src-components-sitefooter-tsx-to-use-the-new-block-style-3d-branding-presentation-while-keeping-the-existing-tagline-text-present-and-readable",
-      "featureTitle": "Change the brand/business name display to ALL CAPS, bold, with a block-style 3D look by generating a block-style 3D text graphic for the brand name and updating `frontend/src/components/SiteHeader.tsx` and `frontend/src/components/SiteFooter.tsx` to use the new block-style 3D branding presentation (while keeping the existing tagline text present and readable).",
-      "files": [
-        "frontend/src/components/BrandMark.tsx",
-        "frontend/src/components/SiteFooter.tsx",
-        "frontend/src/components/SiteHeader.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-18"
+        "REQ-8"
       ],
       "confidence": "high"
     }

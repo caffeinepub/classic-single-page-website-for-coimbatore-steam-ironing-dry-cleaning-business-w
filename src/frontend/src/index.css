@@ -4,36 +4,36 @@
 
 @layer base {
     :root {
-        --radius: 0.5rem;
+        --radius: 0.75rem;
         
-        /* Clean light-blue palette with strong contrast */
-        --background: 0.95 0.02 220;
-        --foreground: 0.20 0.015 240;
+        /* Enhanced vibrant warm palette - Light mode */
+        --background: 0.98 0.02 55;
+        --foreground: 0.20 0.03 35;
         
-        --card: 0.98 0.01 220;
-        --card-foreground: 0.20 0.015 240;
+        --card: 0.99 0.015 50;
+        --card-foreground: 0.20 0.03 35;
         
-        --popover: 0.98 0.01 220;
-        --popover-foreground: 0.20 0.015 240;
+        --popover: 0.99 0.015 50;
+        --popover-foreground: 0.20 0.03 35;
         
-        --primary: 0.45 0.10 230;
-        --primary-foreground: 0.98 0.01 220;
+        --primary: 0.58 0.16 25;
+        --primary-foreground: 0.99 0.01 55;
         
-        --secondary: 0.88 0.03 215;
-        --secondary-foreground: 0.20 0.015 240;
+        --secondary: 0.90 0.03 48;
+        --secondary-foreground: 0.20 0.03 35;
         
-        --muted: 0.92 0.02 218;
-        --muted-foreground: 0.45 0.02 230;
+        --muted: 0.93 0.02 52;
+        --muted-foreground: 0.48 0.04 42;
         
-        --accent: 0.60 0.15 210;
-        --accent-foreground: 0.98 0.01 220;
+        --accent: 0.62 0.14 155;
+        --accent-foreground: 0.99 0.01 55;
         
-        --destructive: 0.55 0.20 25;
-        --destructive-foreground: 0.98 0.01 220;
+        --destructive: 0.52 0.22 20;
+        --destructive-foreground: 0.99 0.01 55;
         
-        --border: 0.85 0.03 215;
-        --input: 0.85 0.03 215;
-        --ring: 0.60 0.15 210;
+        --border: 0.88 0.03 48;
+        --input: 0.88 0.03 48;
+        --ring: 0.58 0.16 25;
         
         --chart-1: 0.646 0.222 41.116;
         --chart-2: 0.6 0.118 184.704;
@@ -43,33 +43,33 @@
     }
 
     .dark {
-        --background: 0.18 0.02 230;
-        --foreground: 0.95 0.01 220;
+        --background: 0.18 0.03 35;
+        --foreground: 0.96 0.02 55;
         
-        --card: 0.22 0.02 235;
-        --card-foreground: 0.95 0.01 220;
+        --card: 0.22 0.03 33;
+        --card-foreground: 0.96 0.02 55;
         
-        --popover: 0.22 0.02 235;
-        --popover-foreground: 0.95 0.01 220;
+        --popover: 0.22 0.03 33;
+        --popover-foreground: 0.96 0.02 55;
         
-        --primary: 0.70 0.12 215;
-        --primary-foreground: 0.18 0.02 230;
+        --primary: 0.65 0.17 25;
+        --primary-foreground: 0.18 0.03 35;
         
-        --secondary: 0.28 0.02 235;
-        --secondary-foreground: 0.95 0.01 220;
+        --secondary: 0.28 0.03 38;
+        --secondary-foreground: 0.96 0.02 55;
         
-        --muted: 0.28 0.02 235;
-        --muted-foreground: 0.65 0.02 225;
+        --muted: 0.28 0.03 38;
+        --muted-foreground: 0.70 0.04 48;
         
-        --accent: 0.65 0.15 210;
-        --accent-foreground: 0.95 0.01 220;
+        --accent: 0.68 0.15 155;
+        --accent-foreground: 0.96 0.02 55;
         
-        --destructive: 0.60 0.22 25;
-        --destructive-foreground: 0.95 0.01 220;
+        --destructive: 0.58 0.24 20;
+        --destructive-foreground: 0.96 0.02 55;
         
-        --border: 0.32 0.02 235;
-        --input: 0.32 0.02 235;
-        --ring: 0.65 0.15 210;
+        --border: 0.32 0.03 38;
+        --input: 0.32 0.03 38;
+        --ring: 0.65 0.17 25;
     }
 
     * {
@@ -93,7 +93,7 @@
     }
     
     section {
-        @apply py-16 md:py-24;
+        @apply py-20 md:py-28;
     }
     
     .section-container {

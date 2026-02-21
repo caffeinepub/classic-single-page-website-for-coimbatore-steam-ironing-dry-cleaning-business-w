@@ -6,6 +6,12 @@ export const businessInfo = {
   servicesNote: 'We provide professional steam ironing, dry cleaning, and garment care services for all fabric types.'
 };
 
+export const heroContent = {
+  welcomeLine: 'Welcome To MJ Steam Ironing and Dry Cleaning Services – Customer Satisfaction Is Our Primary Goal',
+  headline: 'Premium Steam Ironing & Dry Cleaning in Coimbatore',
+  subtext: 'Expert garment care services including steam ironing, dry cleaning, stain removal, darning, and traditional saree pleating. Serving Coimbatore, Tamil Nadu with professional fabric care you can trust.'
+};
+
 export const services = [
   {
     title: 'Steam Ironing',

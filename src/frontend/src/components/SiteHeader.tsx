@@ -36,7 +36,7 @@ export function SiteHeader() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-background/95 backdrop-blur-sm shadow-sm' : 'bg-transparent'
+        isScrolled ? 'bg-background/98 backdrop-blur-md shadow-md border-b border-border' : 'bg-background/80 backdrop-blur-sm'
       }`}
     >
       <div className="section-container">
@@ -56,7 +56,7 @@ export function SiteHeader() {
                 key={link.href}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="text-sm font-medium text-foreground/80 hover:text-accent transition-colors whitespace-nowrap"
+                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap"
               >
                 {link.label}
               </a>
@@ -66,7 +66,7 @@ export function SiteHeader() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-foreground hover:text-accent transition-colors flex-shrink-0"
+            className="lg:hidden p-2 text-foreground hover:text-primary transition-colors flex-shrink-0"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -82,7 +82,7 @@ export function SiteHeader() {
                   key={link.href}
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
-                  className="text-base font-medium text-foreground/80 hover:text-accent transition-colors py-2"
+                  className="text-base font-medium text-foreground/80 hover:text-primary transition-colors py-2"
                 >
                   {link.label}
                 </a>
